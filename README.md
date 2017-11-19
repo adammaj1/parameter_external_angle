@@ -8,7 +8,11 @@
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
 
 
-[External angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)
+From the definitions 
+$`\Phi_M(c) \ \overset{\underset{\mathrm{def}}{}}{=} \ \Phi_c(z= c)   `$
+$`arg_M(c)  = arg(\Phi_M(c)) `$
+$`arg_c(z=c) = arg(\Phi_c(z= c)) `$
+so [external angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)
 $`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
 
 
@@ -16,7 +20,8 @@ where :
 * $`arg_M`$ is exernal angle on the parameter plane
 * $`arg_c`$ is the external angle on the dynamic plane
 * $`arg`$ is the angle ( argument, phase) of complex number
-* $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane)
+* $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the dynamic plane
+* $`\Phi_M`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the parameter plane
 
 
 $` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}} `$
