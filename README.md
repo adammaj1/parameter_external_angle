@@ -39,12 +39,8 @@ Near infinity angle of z is equal to external angle of z so we can switch the pl
 ## trace external ray outwards on the parameter plane
 
 >>>
-you need to trace a ray outwards, which means using different C values,
-and the bits come in reverse order, first the deepest bit from the
-iteration count of the start pixel, then move C outwards along the ray
-(perhaps using the newton's method of mandel-exray.pdf in reverse),
-repeat until no more bits left.  you move C a fractional iteration count
-each time, and collect bits when crossing integer dwell boundaries
+you need to trace a ray outwards, which means using different C values, and the bits come in reverse order, first the deepest bit from the iteration count of the start pixel, then move C outwards along the ray
+(perhaps using the newton's method of mandel-exray.pdf in reverse), repeat until no more bits left.  you move C a fractional iteration count each time, and collect bits when crossing integer dwell boundaries
 [Claude Heiland-Allen](http://mathr.co.uk/blog/)
 >>>>
 
