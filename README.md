@@ -9,7 +9,7 @@
 
 
 From the definitions: 
-$`\Phi_M(c) \ \overset{\underset{\mathrm{def}}{}}{=} \ \Phi_c(z= c)   `$  
+$`\Phi_M(c) \overset{def}{=} \Phi_c(z= c)   `$  
 $`arg_M(c)  = arg(\Phi_M(c)) `$  
 $`arg_c(z=c) = arg(\Phi_c(z= c)) `$  
 so [external angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)  
