@@ -4,10 +4,11 @@
 
 
 ## Boettcher function
-[Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
+* [Boettcher equation in wikipedia](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation)
+* [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
 
 
-External angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane  
+[External angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)
 
 * on the parameter plane choose point c
 * switch to the dynamic z-plane for c (not equal to zero)
