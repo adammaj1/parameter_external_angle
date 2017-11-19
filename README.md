@@ -57,25 +57,21 @@ you need to trace a ray outwards, which means using different C values, and the 
 ##  Douady and Hubbard method for c near the real axis
 
 >>>
-Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where 0 <= Ray < 1. The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones. 
+Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where   
+    0 <= Ray < 1.   
+The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones.   
 To find it, consider the sequence  
-
-
     {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
-    
-
 We replace Arg[z] by 
 * 0 of 0 <= Arg[z] < Pi, 
 * 1 otherwise.   
+Here is some Mathematica code for this.  
 
-Here is some Mathematica code for this.
-
-c = -.75 +.0001*I; z = 0;
-
+    c = -.75 +.0001*I; 
+    z = 0;
     Do[z = z^2 + c; Print[Abs[Floor[Arg[z]/Pi]]], {n, 1, 10}]
 
-This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...} which is the binary expansion for 1/3
-
+This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...} which is the binary expansion for 1/3  
 
 For c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...} which is the binary expansions for 2/3.  
 
