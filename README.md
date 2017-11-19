@@ -8,7 +8,7 @@
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
 
 
-From the definitions: 
+From the definitions:  
 $`\Phi_M(c) \overset{def}{=} \Phi_c(c)`$  
 $`arg_M(c)  = arg(\Phi_M(c)) `$  
 $`arg_c(z) = arg(\Phi_c(z c)) `$  
@@ -54,7 +54,29 @@ you need to trace a ray outwards, which means using different C values, and the 
 >>>
 
 
+##  Douady and Hubbard method for c near the real axis
 
+>>>
+Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where 0 <= Ray < 1. The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones. 
+To find it, consider the sequence  
+
+
+    {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
+    
+
+We replace Arg[z] by 
+* 0 of 0 <= Arg[z] < Pi, 
+* 1 otherwise.   
+
+Here is some code for this.
+
+c = -.75 +.0001*I; z = 0;
+
+    Do[z = z^2 + c; Print[Abs[Floor[Arg[z]/Pi]]], {n, 1, 10}]
+
+This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...}, while c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...}. These are the binary expansions for 1/3 and 2/3 respectively. the point c0 = -.75 is the root of the period 2 bud. There are two rays leading inward to it, one coming from above and one from below. The two values of c we have chosen lie on or very near these two rays.
+>>>
+ [External angles in the Mandelbrot set: the work of Douady and Hubbard by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
 
 
 
@@ -67,7 +89,7 @@ you need to trace a ray outwards, which means using different C values, and the 
 * [Computing external dynamic angle](https://gitlab.com/adammajewski/dynamic_external_angle)
 * [parameter ray_in using Newton method and mpfr library in c ](https://gitlab.com/c_files/parameter_ray_in_newton_mpfr)
 * [NonInteractive Parameter Ray_In MPFR](https://gitlab.com/adammajewski/NonInteractiveParameterRayInMPFR)
-
+* [External angles in the Mandelbrot set: the work of Douady and Hubbard. by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
 
 # git ( gitlab)
 
