@@ -9,7 +9,17 @@
 
 
 [External angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)
+$`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
 
+
+where :
+* $`arg_M`$ is exernal angle on the parameter plane
+* $`arg_c`$ is the external angle on the dynamic plane
+* $`arg`$ is the angle ( argument, phase) of complex number
+* $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane)
+
+
+Steps:
 * on the parameter plane choose point c
 * switch to the dynamic z-plane for c (not equal to zero)
   * take z= c 
@@ -25,9 +35,8 @@
   
 Near infinity angle of z is equal to external angle of z so we can switch the plane
 
-$`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
 
-where $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane)
+
 
 
 
