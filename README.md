@@ -19,6 +19,10 @@ where :
 * $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane)
 
 
+$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}} `$
+
+
+
 Steps:
 * on the parameter plane choose point c
 * switch to the dynamic z-plane for c (not equal to zero)
@@ -33,7 +37,7 @@ Steps:
   
   
   
-Near infinity angle of z is equal to external angle of z so we can switch the plane
+Near infinity external angle of z is equal to angle of z so we can switch the plane
 
 
 ## trace external ray outwards on the parameter plane
