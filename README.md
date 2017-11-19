@@ -68,15 +68,21 @@ We replace Arg[z] by
 * 0 of 0 <= Arg[z] < Pi, 
 * 1 otherwise.   
 
-Here is some code for this.
+Here is some Mathematica code for this.
 
 c = -.75 +.0001*I; z = 0;
 
     Do[z = z^2 + c; Print[Abs[Floor[Arg[z]/Pi]]], {n, 1, 10}]
 
-This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...}, while c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...}. These are the binary expansions for 1/3 and 2/3 respectively. the point c0 = -.75 is the root of the period 2 bud. There are two rays leading inward to it, one coming from above and one from below. The two values of c we have chosen lie on or very near these two rays.
->>>
- [External angles in the Mandelbrot set: the work of Douady and Hubbard by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
+This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...} which is the binary expansion for 1/3
+
+
+For c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...} which is the binary expansions for 2/3.  
+
+The point c0 = -.75 is the root of the period 2 bud. There are two rays leading inward to it, one coming from above and one from below. The two values of c we have chosen lie on or very near these two rays.
+>>>  
+   
+[External angles in the Mandelbrot set: the work of Douady and Hubbard by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
 
 
 
