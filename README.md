@@ -81,6 +81,9 @@ The point c0 = -.75 is the root of the period 2 bud. There are two rays leading 
 [External angles in the Mandelbrot set: the work of Douady and Hubbard by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
 
 
+Files:
+* [douady.c - c file wich checkes Douady-Hubbard method](douady.c)
+* [morse.mac - batch file for Maxima cas which computes upper angles of external rays which land on the roots of the period doubling cascade on the real axis](morse.mac)
 
 
 
