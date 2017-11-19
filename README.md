@@ -78,7 +78,7 @@ For c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...} which is the binary e
 The point c0 = -.75 is the root of the period 2 bud. There are two rays leading inward to it, one coming from above and one from below. The two values of c we have chosen lie on or very near these two rays.
 >>>  
    
-[External angles in the Mandelbrot set: the work of Douady and Hubbard by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
+[Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
 
 
 Files:
