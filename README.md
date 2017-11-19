@@ -1,6 +1,8 @@
 # See also
 * [Computing external dynamic angle](https://gitlab.com/adammajewski/dynamic_external_angle)
-* 
+* [parameter ray_in using Newton method and mpfr library in c ](https://gitlab.com/c_files/parameter_ray_in_newton_mpfr)
+* [NonInteractive Parameter Ray_In MPFR](https://gitlab.com/adammajewski/NonInteractiveParameterRayInMPFR)
+
 
 # git ( gitlab)
 
