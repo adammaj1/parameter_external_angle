@@ -24,7 +24,7 @@ External angle of point c on the parameter plane is equal to external angle of t
   
 Near infinity angle of z is equal to external angle of z so we can switch the plane
 
-$`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z))`$
+$`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
 
 where $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane)
 
