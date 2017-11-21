@@ -9,12 +9,12 @@
 
 
 From the definitions:  
-$`\Phi_M(c) \overset{def}{=} \Phi_c(c)`$  
+$`\Phi_M(c) = \Phi_c(c)`$  
 $`arg_M(c)  = arg(\Phi_M(c)) `$  
 $`arg_c(z) = arg(\Phi_c(z c)) `$  
 so [external angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)  
 $`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
-
+[//]: # "\Phi_M(c) \overset{def}{=} \Phi_c(c)`"
 
 where :
 * $`arg_M`$ is exernal angle on the parameter plane
@@ -63,7 +63,7 @@ The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes 
 To find it, consider the sequence  
     {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
 We replace Arg[z] by 
-* 0 of 0 <= Arg[z] < Pi, 
+* 0 if 0 <= Arg[z] < Pi, 
 * 1 otherwise.   
 Here is some Mathematica code for this.  
     c = -.75 +.0001*I; 
@@ -78,7 +78,7 @@ The point c0 = -.75 is the root of the period 2 bud. There are two rays leading 
 
 
 Files:
-* [douady.c - c file wich checkes Douady-Hubbard method](douady.c)
+* [douady.c - c file wich checks Douady-Hubbard method](douady.c)
 * [morse.mac - batch file for Maxima cas which computes upper angles of external rays which land on the roots of the period doubling cascade on the real axis](morse.mac)
 
 
