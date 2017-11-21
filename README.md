@@ -57,7 +57,7 @@ testing shows the original atan2() is only accurate to around 16 bits bit collec
 ```
 This gets you the angle in only double-precision, but using double precision floating point throughout it's possible to get the external angle in much higher precision 
 * the trick is to collect bits from the binary representation of the angle as you cross each dwell band 
-* whether the final iterate that escaped has a positive or negative imaginary part determines if the bit is 0 or 1 respectively, see binary decomposition colouring http://www.mrob.com/pub/muency/binarydecomposition.html .
+* whether the final iterate that escaped has a positive or negative imaginary part determines if the bit is 0 or 1 respectively, see [binary decomposition colouring](http://www.mrob.com/pub/muency/binarydecomposition.html) 
 >>>
 [Claude Heiland-Allen](http://www.fractalforums.com/programming/smooth-external-angle-of-mandelbrot-set/15/)
   
