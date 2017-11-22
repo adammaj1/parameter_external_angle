@@ -77,7 +77,7 @@ See also:
 
 
 Code:
-* [tavis.cpp - compute external angle of point cx, cy](tavis.cpp)
+* [tavis.cpp ](tavis.cpp) - compute external angle of point cx, cy
 
 ##  Douady and Hubbard method for c near the real axis
 
@@ -87,7 +87,7 @@ The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes 
 To find it, consider the sequence {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
 We replace Arg[z] by 
 * 0 if 0 <= Arg[z] < Pi, 
-* 1 otherwise.   
+* 1 otherwise.
 Here is some Mathematica code for this.  
 ```
     c = -.75 +.0001*I; 
