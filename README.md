@@ -82,18 +82,25 @@ Code:
 ##  Douady and Hubbard method for c near the real axis
 
 >>>
-Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where   
-    0 <= Ray < 1.   
+Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where 0 <= Ray < 1.   
 The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones.   
 To find it, consider the sequence  
+
     {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
+
 We replace Arg[z] by 
 * 0 if 0 <= Arg[z] < Pi, 
 * 1 otherwise.   
+
+
 Here is some Mathematica code for this.  
+```
     c = -.75 +.0001*I; 
     z = 0;
     Do[z = z^2 + c; Print[Abs[Floor[Arg[z]/Pi]]], {n, 1, 10}]
+```    
+
+
 This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...} which is the binary expansion for 1/3  
 For c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...} which is the binary expansions for 2/3.  
 The point c0 = -.75 is the root of the period 2 bud. There are two rays leading inward to it, one coming from above and one from below. The two values of c we have chosen lie on or very near these two rays.
@@ -103,8 +110,8 @@ The point c0 = -.75 is the root of the period 2 bud. There are two rays leading 
 
 
 Files:
-* [douady.c - c file wich checks Douady-Hubbard method](douady.c)
-* [morse.mac - batch file for Maxima cas which computes upper angles of external rays which land on the roots of the period doubling cascade on the real axis](morse.mac)
+* [douady.c ](douady.c) - c file wich checks Douady-Hubbard method
+* [morse.mac ](morse.mac) - batch file for Maxima cas which computes upper angles of external rays which land on the roots of the period doubling cascade on the real axis
 
 
 
