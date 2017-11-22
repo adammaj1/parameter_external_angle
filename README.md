@@ -85,10 +85,14 @@ Code:
 Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where 0 <= Ray < 1.   
 The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones. 
 To find it, consider the sequence {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
-We replace Arg[z] by 
+
+
+We replace Arg[z] by
 * 0 if 0 <= Arg[z] < Pi, 
-* 1 otherwise.
-Here is some Mathematica code for this.  
+* 1 otherwise
+
+
+Here is some Mathematica code for this.
 ```
     c = -.75 +.0001*I; 
     z = 0;
