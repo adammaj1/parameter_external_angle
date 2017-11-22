@@ -57,18 +57,27 @@ testing shows the original atan2() is only accurate to around 16 bits bit collec
 ```
 This gets you the angle in only double-precision, but using double precision floating point throughout it's possible to get the external angle in much higher precision 
 * the trick is to collect bits from the binary representation of the angle as you cross each dwell band 
-* whether the final iterate that escaped has a positive or negative imaginary part determines if the bit is 0 or 1 respectively, see [binary decomposition colouring](http://www.mrob.com/pub/muency/binarydecomposition.html) 
->>>
-[Claude Heiland-Allen](http://www.fractalforums.com/programming/smooth-external-angle-of-mandelbrot-set/15/)
+* whether the final iterate that escaped has a positive or negative imaginary part determines if the bit is 0 or 1 respectively, see [binary decomposition colouring](http://www.mrob.com/pub/muency/binarydecomposition.html)   
+Claude Heiland-Allen
+>>>  
+[FF: smooth-external-angle-of-mandelbrot-set](http://www.fractalforums.com/programming/smooth-external-angle-of-mandelbrot-set/15/)
   
 
 
 >>>
 you need to trace a ray outwards, which means using different C values, and the bits come in reverse order, first the deepest bit from the iteration count of the start pixel, then move C outwards along the ray
 (perhaps using the newton's method of mandel-exray.pdf in reverse), repeat until no more bits left.  you move C a fractional iteration count each time, and collect bits when crossing integer dwell boundaries
-[Claude Heiland-Allen](http://mathr.co.uk/blog/)
 >>>
+[Claude Heiland-Allen](http://mathr.co.uk/blog/)
 
+
+See also:
+* [binary-decomposition-and-external-angles](http://www.fractalforums.com/animations-showcase-(rate-my-short-animation)/binary-decomposition-and-external-angles/)
+* [external-angle-contours](http://www.fractalforums.com/animations-showcase-(rate-my-short-animation)/external-angle-contours/)
+
+
+Code:
+* [tavis.cpp - compute external angle of point cx, cy](tavis.cpp)
 
 ##  Douady and Hubbard method for c near the real axis
 
@@ -125,5 +134,5 @@ git push -u origin master
 # technical note
 GitLab uses:
 * the Redcarpet Ruby library for [Markdown processing](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md)
-* KaTeX to render [math written with the LaTeX syntax](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md), but [only subset](https://khan.github.io/KaTeX/function-support.html)
+* [KaTeX](https://khan.github.io/KaTeX/) to render [math written with the LaTeX syntax](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md), but [only subset](https://khan.github.io/KaTeX/function-support.html). [Here is used version](https://github.com/gitlabhq/gitlabhq/blob/a0715f079c143a362a7f6157db45020b8432003e/vendor/assets/javascripts/katex.js)
 
