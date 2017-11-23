@@ -57,7 +57,10 @@ Steps:
 Near infinity external angle of z is equal to angle of z so we can switch the plane
 
 
-" since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expression formula"   Souichiro-Ikebe ( automatic tranlsation)  
+>" since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expres>sion formula"  
+
+
+Souichiro-Ikebe ( automatic translation)  
 
 
 
@@ -69,7 +72,9 @@ $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_
 
 
 ## trace external ray outwards on the parameter plane
->"mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray" Souichiro-Ikebe ( automatic tranlsation)  
+>"mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray" 
+
+Souichiro-Ikebe ( automatic translation)  
 
 
 >testing shows the original atan2() is only accurate to around 16 bits bit collection when passing dwell bands is much more accurate
