@@ -185,11 +185,13 @@ atan2(y/x) = Returns the principal value of the arc tangent of y/x, expressed in
 
 How to compute arg(z/(z-c)) in a fast way?
 
+simlify z/(z-c)
+
 ```c
 z = x+y*I
 arg(z) = atan2(y,x) 
-z-c = u+v*I
-arg(z/(z-c)) = arg(z/(u+v*I))
+z-c = u+v*I // b 
+arg(z/(z-c)) = arg(z/b)
 ```
 
 Here is Maxima CAS code:   
@@ -213,9 +215,21 @@ Here is Maxima CAS code:
                                                                                                                  2    2
                                                                                                                 v  + u
 (%i7) 
+
 ```
 
+Denote :
 
+$`z/b = rn/rd + I*in/id`$
+
+notice that
+
+$`atan2(in/id, rn/rd) = atan2(in, rn)`$
+
+Now one can skip:
+* 2 divisions : in/id and rn/rd
+* 2 multiplications : $`v*v`$ and u*u
+* 1 addition $`v^2+u^2`$
 
 
 
