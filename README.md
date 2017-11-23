@@ -7,10 +7,10 @@ external angle
 
 
 Methods:
-* [series expansion formula of the Boettcher function](README.md##series expansion formula of the Boettcher function)
-* [trace external ray outwards on the parameter plane and collect bits ](README.md##trace external ray outwards on the parameter plane) - the best method ?
-* [Douady and Hubbard method](README.md##Douady and Hubbard method)
-* [Stripe Average Coloring (or Method) = SAM or SAC](README.md##Stripe Average Coloring (or Method) = SAM or SAC) - good graphical result
+* [series expansion formula of the Boettcher function](README.md#series expansion formula of the Boettcher function)
+* [trace external ray outwards on the parameter plane and collect bits ](README.md#trace external ray outwards on the parameter plane) - the best method ?
+* [Douady and Hubbard method](README.md#Douady and Hubbard method)
+* [Stripe Average Coloring (or Method) = SAM or SAC](README.md#Stripe Average Coloring (or Method) = SAM or SAC) - good graphical result
 
 ##series expansion formula of the Boettcher function
 
