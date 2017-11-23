@@ -54,14 +54,11 @@ Steps:
 Near infinity external angle of z is equal to angle of z so we can switch the plane
 
 
->>>
-since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expression formula
->>>  
-Souichiro-Ikebe ( automatic tranlsation)
+" since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expression formula"   Souichiro-Ikebe ( automatic tranlsation)  
 
 
 
-### series expansion formula for comp[uting external angles
+### series expansion formula for computing external angles
 
 
 
@@ -69,11 +66,7 @@ Souichiro-Ikebe ( automatic tranlsation)
 
 
 ## trace external ray outwards on the parameter plane
->>>
- mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray"
->>>   
-
-Souichiro-Ikebe ( automatic tranlsation)  
+"mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray" Souichiro-Ikebe ( automatic tranlsation)  
 
 
 >>>
