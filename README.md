@@ -7,14 +7,14 @@ external angle
 
 
 Methods:
-* [series expansion formula of the Boettcher function](## series expansion formula of the Boettcher function)
-* [trace external ray outwards on the parameter plane and collect bits ](## trace external ray outwards on the parameter plane) - the best method ?
-* [Douady and Hubbard method](## Douady and Hubbard method)
-* [Stripe Average Coloring (or Method) = SAM or SAC](## Stripe Average Coloring (or Method) = SAM or SAC) - good graphical result
+* [series expansion formula of the Boettcher function](##series expansion formula of the Boettcher function)
+* [trace external ray outwards on the parameter plane and collect bits ](##trace external ray outwards on the parameter plane) - the best method ?
+* [Douady and Hubbard method](##Douady and Hubbard method)
+* [Stripe Average Coloring (or Method) = SAM or SAC](##Stripe Average Coloring (or Method) = SAM or SAC) - good graphical result
 
-## series expansion formula of the Boettcher function
+##series expansion formula of the Boettcher function
 
-### The Böttcher function
+###The Böttcher function
 The Böttcher function maps the complement of the Mandelbrot set conformally to the complement of the closed unit disk.
 * [Boettcher equation in wikipedia](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation)
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
@@ -68,7 +68,7 @@ Souichiro-Ikebe ( automatic translation)
 
 
 
-### series expansion formula for computing external angles
+###series expansion formula for computing external angles
 
 $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
 
@@ -229,7 +229,7 @@ Links:
 
 
 
-## trace external ray outwards on the parameter plane
+##trace external ray outwards on the parameter plane
 >"mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray" 
 
 Souichiro-Ikebe ( automatic translation)  
@@ -296,7 +296,7 @@ Files:
 
 
 
-## Stripe Average Coloring (or Method) = SAM or SAC
+##Stripe Average Coloring (or Method) = SAM or SAC
 
 
 Links:
