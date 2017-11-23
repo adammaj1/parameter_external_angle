@@ -59,14 +59,22 @@ since the argument of the Boettcher function is not a main value but a value obt
 >>>  
 Souichiro-Ikebe ( automatic tranlsation)
 
+
+
 ### series expansion formula for comp[uting external angles
 
 
 
 
-## trace external ray outwards on the parameter plane
 
-" mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray" Souichiro-Ikebe ( automatic tranlsation)
+
+## trace external ray outwards on the parameter plane
+>>>
+ mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray"
+>>>   
+
+Souichiro-Ikebe ( automatic tranlsation)  
+
 
 >>>
 testing shows the original atan2() is only accurate to around 16 bits bit collection when passing dwell bands is much more accurate
