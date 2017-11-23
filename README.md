@@ -7,11 +7,10 @@ external angle
 
 
 Methods:
-* series expansion formula of the Boettcher function
-* trace external ray outwards on the parameter plane and collect bits (the best method ?)
-* Douady and Hubbard method
-* Stripe Average Coloring (or Method) = SAM or SAC ( good graphical result)
-
+* [series expansion formula of the Boettcher function](## series expansion formula of the Boettcher function)
+* [trace external ray outwards on the parameter plane and collect bits ](## trace external ray outwards on the parameter plane) - the best method ?
+* [Douady and Hubbard method](## Douady and Hubbard method)
+* [Stripe Average Coloring (or Method) = SAM or SAC](## Stripe Average Coloring (or Method) = SAM or SAC) - good graphical result
 
 ## series expansion formula of the Boettcher function
 
@@ -178,6 +177,43 @@ double mturn(double complex c)
   
 }//mturn
 ```
+
+
+
+atan2(y/x) = Returns the principal value of the arc tangent of y/x, expressed in radians
+
+z = x+y*I
+arg(z) = atan2(y,x) 
+
+z-c = u+v*I
+
+arg(z/(z-c))arg(z/(u+v*I)) = 
+
+(%i2) z:x+y*%i;
+(%o2)                                                                                                           %i y + x
+(%i3) b:u+v*%i;
+(%o3)                                                                                                           %i v + u
+(%i4) creal(z/b);
+                                                                                                                  %i y + x
+(%o4)                                                                                                       creal(--------)
+                                                                                                                  %i v + u
+(%i5) realpart(z/b);
+                                                                                                               v y + u x
+(%o5)                                                                                                          ---------
+                                                                                                                 2    2
+                                                                                                                v  + u
+(%i6) imagpart(z/b);
+                                                                                                               u y - v x
+(%o6)                                                                                                          ---------
+                                                                                                                 2    2
+                                                                                                                v  + u
+(%i7) 
+
+
+
+
+
+
 
 
 Files:
