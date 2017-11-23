@@ -2,7 +2,7 @@
 # How to compute external angle?
 
 external angle 
-* [wikipedia : external ray]{https://en.wikipedia.org/wiki/External_ray}
+* [external ray in wikipedia]https://en.wikipedia.org/wiki/External_ray)
 
 
 
@@ -62,7 +62,7 @@ Near infinity external angle of z is equal to angle of z so we can switch the pl
 
 ### series expansion formula for computing external angles
 
-
+$`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
 
 
 
@@ -138,10 +138,6 @@ Files:
 
 ## Stripe Average Coloring (or Method) = SAM or SAC
 
-
-Files:
-* [samm.c](samm.c) - c file
-* [samm.png](samm.png)
 
 Links:
 * [commons](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_Stripe_Average_Coloring.png)
@@ -244,8 +240,17 @@ and coloring:
 }
 ``` 
 
-![Stripe Average Coloring (or Method) + DEM ](samm.png "SAM")
+![whole set ](samm.png)
 
+
+
+![zoom of wake 1/3](samm3.png)
+
+
+Files:
+* [samm.c](samm.c) - c file
+* [samm.png](samm.png)
+* [samm3.png](samm3.png)
 
 
 
