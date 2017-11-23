@@ -140,8 +140,12 @@ Files:
 
 
 Links:
-* [commons](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_Stripe_Average_Coloring.png)
 * [wikibooks](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/stripeAC)
+* [gitlab](https://gitlab.com/adammajewski/mandelbrot_wiki_ACh)
+* [wiki by Arnaoud Cheritat](https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/Mandelbrot_set)
+* [commons - whole set](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_Stripe_Average_Coloring.png)
+* [commons - wake 1/3](https://commons.wikimedia.org/wiki/File:Stripe_Average_Coloring_-_Mandelbrot_set_zoom_(_wake_1over3_).png)
+
 
 ```c
 // the addend function
