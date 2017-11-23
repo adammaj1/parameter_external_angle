@@ -12,7 +12,7 @@ The Böttcher function maps the complement of the Mandelbrot set conformally to 
 * [Boettcher equation in wikipedia](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation)
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
 * Böttcher function by Souichiro-Ikebe
-  * [description]](http://math-functions-1.watson.jp/sub1_spec_390.html#section060)
+  * [description](http://math-functions-1.watson.jp/sub1_spec_390.html#section060)
   * [How to process branch cut lines of Böttcher function](http://math-functions-1.watson.jp/sub4_math_020.html#section030)
   * [FractalRelated.m ](the Mathematica-Package file " FractalRelated.m " in "Code of special function graph" of "File created in Version 8 ") - package of the Mathematica code
 
@@ -56,8 +56,12 @@ Near infinity external angle of z is equal to angle of z so we can switch the pl
 
 >>>
 since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expression formula
->>>
+>>>  
 Souichiro-Ikebe ( automatic tranlsation)
+
+### series expansion formula for comp[uting external angles
+
+
 
 
 ## trace external ray outwards on the parameter plane
