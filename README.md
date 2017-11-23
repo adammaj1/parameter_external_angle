@@ -74,6 +74,123 @@ Souichiro-Ikebe ( automatic translation)
 $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
 
 
+![whole set using palette colors](mturn.png)
+
+
+![whole set using gray colors](mturng.png)
+
+
+![zoom of wake 1/3](mturn3.png)
+
+
+Code:
+
+```c
+
+/*
+ Fc(z) = z*z + c
+ z= x+y*i
+ c= a+b*i
+ This function computes external argument of point C in turns
+ for mandelbrot set for Fc(z)= z*z + c
+ external argument = Arg(Phi(c))
+ 1 [turn] = 360 [degrees] = 2* M_PI [radians]
+ this function is based on function mturn from mbrot.cpp 
+ from old (probably 5.2 of May 17, 2008) version of program mandel by Wolf Jung
+ http://www.iram.rwth-aachen.de/~jung/indexp.html 
+
+Already checked that escaping. Requires z = c instead of z = 0
+ http://fraktal.republika.pl/cpp_argphi.html
+ algorithm: http://www.mndynamics.com/indexp.html#XR
+
+this formula will be valid not only for large |z| 
+
+*/
+double mturn(double complex c)
+{ 
+  int j; 
+  int jMax = 100;
+  
+  double s = 1.0; // = 1/(2^n)
+  double dr = 1.0/2.0; 
+  double theta; 
+  // z-c 
+  double u; // creal(z-c)
+  double v; // cimag(z-c)
+  
+  double r; //   r here means r^2 = cabs(z)* cabs(z)
+  
+  // z = x+y*I 
+  double x; 
+  double y;
+  
+  // c = cx + cy*I        
+  double cx = creal(c);
+  double cy = cimag(c);        
+  
+  
+  
+  
+  // Requires z = c instead of z = 0
+  x = cx;
+  y = cy; 
+  
+  // theta = arg(z)
+  theta = atan2(y, x);
+  
+  // compute the sum 
+  for (j = 1; j < jMax; j++)
+  { 
+    s *= dr;
+    // z=Fc(z)
+    double temp = x*x - y*y + cx;
+    y = 2*x*y + cy;
+    x = temp; 
+    
+    // r here means r^2 = cabs(z)* cabs(z) 
+    r = x*x  + y*y; // 
+    if (r < .0001) return -7; // ?
+    
+    
+    // z-c
+    u = x - cx; 
+    v = y - cy;
+    
+    
+    
+    // atan2 here is computing  arg(z/(z-c))
+    // s*atan2 means : theta/(2^n)
+    // theta += is summation
+    theta += s * atan2(u*y - v*x, u*x + v*y);
+    //
+    if (r/s > 1e25) break; // prevent -nan
+  }
+  
+  
+  //if (r < 1000) return -6; // ? lazy escaping ???, 
+  //
+  theta *= (.5/M_PI); // convertion to turns 
+  //
+  theta -= floor(theta); // modulo 1 
+  
+  return theta;
+  
+  
+}//mturn
+```
+
+
+Files:
+* [mturn.c](mturnc.c) - c file
+* [mturn.png](mturn.png) - whole set using palette colors
+* [mturng.png](mturng.png) - whole set using gray colors
+* [mturn3.png](mturn3.png) - zoom of wake 1/3 using palette colors
+
+Links:
+* [description and cpp code by Wolf Jung](http://www.mndynamics.com/indexp.html#XR)
+* [How to process branch cut lines of Böttcher function](http://math-functions-1.watson.jp/sub4_math_020.html#section030) by Souichiro-Ikebe
+* [argphi](http://fraktal.republika.pl/cpp_argphi.html)
+
 
 
 ## trace external ray outwards on the parameter plane
