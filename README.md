@@ -6,6 +6,11 @@ external angle
 * 
 
 
+Methods:
+* series expansion formula of the Boettcher function
+* trace external ray outwards on the parameter plane and collect bits (the best method ?)
+* Douady and Hubbard method
+* Stripe Average Coloring (or Method) = SAM or SAC ( good graphical result)
 
 
 ## series expansion formula of the Boettcher function
