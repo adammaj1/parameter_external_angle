@@ -2,6 +2,8 @@
 # How to compute external angle?
 
 external angle 
+* [wikipedia : external ray]{https://en.wikipedia.org/wiki/External_ray}
+
 
 
 
@@ -103,7 +105,7 @@ Code:
 
 ##  Douady and Hubbard method for c near the real axis
 
->>>
+>
 Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where 0 <= Ray < 1.   
 The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones. 
 To find it, consider the sequence {Arg[c], Arg[c^2 +c], Arg[(c^2 + c)^2 + c], ...}.  
@@ -123,7 +125,7 @@ Here is some Mathematica code for this.
 This produces the sequence {0, 1, 0, 1, 0, 1, 0, ...} which is the binary expansion for 1/3  
 For c = -.75 - .0001*I produces {1, 0, 1, 0, 1, 0, 1, ...} which is the binary expansions for 2/3.  
 The point c0 = -.75 is the root of the period 2 bud. There are two rays leading inward to it, one coming from above and one from below. The two values of c we have chosen lie on or very near these two rays.
->>>  
+>  
    
 [Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
 
