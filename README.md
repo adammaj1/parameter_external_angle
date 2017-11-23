@@ -182,13 +182,18 @@ double mturn(double complex c)
 
 atan2(y/x) = Returns the principal value of the arc tangent of y/x, expressed in radians
 
+
+How to compute arg(z/(z-c)) in a fast way?
+
+```c
 z = x+y*I
 arg(z) = atan2(y,x) 
-
 z-c = u+v*I
+arg(z/(z-c)) = arg(z/(u+v*I))
+```
 
-arg(z/(z-c))arg(z/(u+v*I)) = 
-
+Here is Maxima CAS code:   
+```
 (%i2) z:x+y*%i;
 (%o2)                                                                                                           %i y + x
 (%i3) b:u+v*%i;
@@ -208,7 +213,7 @@ arg(z/(z-c))arg(z/(u+v*I)) =
                                                                                                                  2    2
                                                                                                                 v  + u
 (%i7) 
-
+```
 
 
 
