@@ -1,11 +1,20 @@
 
 # How to compute external angle?
 
+external angle 
 
 
-## Boettcher function
+
+## series expansion formula of the Boettcher function
+
+### The Böttcher function
+The Böttcher function maps the complement of the Mandelbrot set conformally to the complement of the closed unit disk.
 * [Boettcher equation in wikipedia](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation)
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
+* Böttcher function by Souichiro-Ikebe
+  * [description]](http://math-functions-1.watson.jp/sub1_spec_390.html#section060)
+  * [How to process branch cut lines of Böttcher function](http://math-functions-1.watson.jp/sub4_math_020.html#section030)
+  * [FractalRelated.m ](the Mathematica-Package file " FractalRelated.m " in "Code of special function graph" of "File created in Version 8 ") - package of the Mathematica code
 
 
 From the definitions:  
@@ -45,7 +54,15 @@ Steps:
 Near infinity external angle of z is equal to angle of z so we can switch the plane
 
 
+>>>
+since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expression formula
+>>>
+Souichiro-Ikebe ( automatic tranlsation)
+
+
 ## trace external ray outwards on the parameter plane
+
+" mostly adopted a calculation method (of the external angle is) to trace the curve of the external ray" Souichiro-Ikebe ( automatic tranlsation)
 
 >>>
 testing shows the original atan2() is only accurate to around 16 bits bit collection when passing dwell bands is much more accurate
