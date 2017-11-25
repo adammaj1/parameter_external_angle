@@ -6,6 +6,8 @@ The Böttcher function:
 
 $`\Phi_c: \hat{\C} \setminus K_c &\to \hat{\C} \setminus \overline{\mathbb{D}}\`$
 
+$`\Phi_M: \hat{\C} \setminus M &\to \hat{\C} \setminus \overline{\mathbb{D}}\`$
+
 $`B(f(z)) = (B(z))^2`$
 
 where:
