@@ -6,7 +6,7 @@ The Böttcher function:
 
 
 
-$'B(f(z)) = (B(z))^2'$
+$`B(f(z)) = (B(z))^2`$
 
 where:
 
@@ -79,7 +79,7 @@ Solutions:
 ### asymptotic series approximation for the Böttcher function
 
 
-$'B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z}^4)'$
+$`B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z}^4)`$
 
 Computed with [Mathematica](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html)
  
