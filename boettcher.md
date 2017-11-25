@@ -4,7 +4,7 @@ The Böttcher function:
 * maps the complement of the Mandelbrot set (or the filled Julia set)  conformally to the complement of the closed unit disk.
 * is a solution of [Boettcher's functional equation](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation), so in case of [complex quadratic map](https://en.wikipedia.org/wiki/Complex_quadratic_polynomial)
 
-
+$`\Phi_c: \hat{\C} \setminus K_c &\to \hat{\C} \setminus \overline{\mathbb{D}}\`$
 
 $`B(f(z)) = (B(z))^2`$
 
