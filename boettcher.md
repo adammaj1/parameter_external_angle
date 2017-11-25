@@ -50,7 +50,9 @@ $`B_M(c) = c + \frac{1}{2} - \frac{1}{8c} + \frac{1}{16c^2} - \frac{5}{128c^3} +
 ![Boettcher and multiplier map on the parameter plane](boettcher.png)
 
 
-Near Mandelbrot set the image of Boettcher map is not good 
+Boettcher and multiplier map on the parameter plane:
+* The exterior of Mandelbrot set : near the set the image is not good, probaly more terms of Boettcher map are needed : $` O(\frac{1}{c^4})`$
+*  interior : [Multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/def_cqp#Multiplier_map) works good 
 
 
 Files:
