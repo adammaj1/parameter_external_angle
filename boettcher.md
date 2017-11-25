@@ -66,6 +66,20 @@ Near infinity external angle of z is equal to angle of z so we can switch the pl
 
 Souichiro-Ikebe ( automatic translation)  
 
-# solutions
+# solutions of the Boettchers equation
+
+Solutions: 
+* closed for 
+* aproximations
+
+## closed form solutions
+
+## aproximations
+
+### asymptotic series approximation for the Böttcher function
 
 
+$'B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z}^4)'$
+
+Computed with [Mathematica](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html)
+ 
