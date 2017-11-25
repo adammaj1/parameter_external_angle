@@ -97,6 +97,6 @@ $`\theta = \theta_c(z) = arg(\Phi_c(z)) = arg_c(z) = arg(z) + \sum_{n=1}^\infty 
 
 Potential ( absolute value = radius = magnitude):
 
-$`\U = \U_c(z) = log|\Phi_c(z)| =  log|z| + \sum_{n=1}^\infty \left( \frac{1}{2^n}*log \left|1 + \frac{c}{f_c^{n-1}(z)^2}     \right | \right )  `$
+$`U = U_c(z) = log|\Phi_c(z)| =  log|z| + \sum_{n=1}^\infty \left( \frac{1}{2^n}*log \left|1 + \frac{c}{f_c^{n-1}(z)^2}     \right | \right )  `$
 
  
