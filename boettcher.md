@@ -59,7 +59,7 @@ Files:
 $`B_c(z) = z + \frac{0.05}{z} + \frac{0.02375}{z^3} - \frac{0.0036875}{z^5} + O(\frac{1}{z^6})`$
 
 
-Different values are described by <ref>[https://books.google.pl/books?id=SvT_AwAAQBAJ&pg=PA49&lpg=PA49&dq=%22boettcher+function%22&source=bl&ots=KIAZpgX-9y&sig=r1OztpQT7ITgGWSwtBBG1ipvVyY&hl=pl&sa=X&ved=0ahUKEwj49_f2teDWAhWGa1AKHWu1BAkQ6AEIQjAD#v=onepage&q=%22boettcher%20function%22&f=false ]</ref> [Lauwerier, H. A. (Hendrik Adolf) in the book: Chaos by Arun V. Holden Princeton University Press, 14 lip 2014, page 79 ]()
+Different values are described by [Lauwerier, H. A. (Hendrik Adolf) in the book: Chaos by Arun V. Holden Princeton University Press, 14 lip 2014, page 79](https://books.google.pl/books?id=SvT_AwAAQBAJ&pg=PA49&lpg=PA49&dq=%22boettcher+function%22&source=bl&ots=KIAZpgX-9y&sig=r1OztpQT7ITgGWSwtBBG1ipvVyY&hl=pl&sa=X&ved=0ahUKEwj49_f2teDWAhWGa1AKHWu1BAkQ6AEIQjAD#v=onepage&q=%22boettcher%20function%22&f=false)
 
 ### computing argument and radius separtely
 
