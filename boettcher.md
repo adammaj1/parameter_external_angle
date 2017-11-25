@@ -87,5 +87,10 @@ Computed with [Mathematica](http://reference.wolfram.com/language/ref/Mandelbrot
 
 
 
-$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}} `$
+$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}}  = R e^{i \Theta} `$
+
+
+
+$`\Theta = arg(\Phi_c(z)) = arg_c(z) = arg(z) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(z)}{f_c^n(z)-c}     \right ) \right )  `$
+
  
