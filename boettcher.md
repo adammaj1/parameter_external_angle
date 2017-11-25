@@ -11,7 +11,7 @@ $`B(f(z)) = (B(z))^2`$
 where:
 
  - B is Boettchers function
- - f is [complex quadratic map]
+ - f is [complex quadratic map](https://en.wikipedia.org/wiki/Complex_quadratic_polynomial)
 
 
 
@@ -79,7 +79,7 @@ Solutions:
 ### asymptotic series approximation for the Böttcher function
 
 
-$`B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z}^4)`$
+$`B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z^4})`$
 
 Computed with [Mathematica](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html)
  
