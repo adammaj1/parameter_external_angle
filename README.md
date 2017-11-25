@@ -1,9 +1,13 @@
 
-# How to compute external angle?
+# What is external angle ? 
 
 external angle 
 * [external ray in wikipedia](https://en.wikipedia.org/wiki/External_ray)
-* 
+* [Boettcher function](boettcher.md)
+
+
+# How to compute external angle?
+
 
 
 Methods:
@@ -13,58 +17,6 @@ Methods:
 * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
 
 ## series expansion formula of the Boettcher function
-
-### The Böttcher function
-The Böttcher function maps the complement of the Mandelbrot set conformally to the complement of the closed unit disk.
-* [Boettcher equation in wikipedia](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation)
-* [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
-* Böttcher function by Souichiro-Ikebe
-  * [description](http://math-functions-1.watson.jp/sub1_spec_390.html#section060)
-  * [How to process branch cut lines of Böttcher function](http://math-functions-1.watson.jp/sub4_math_020.html#section030)
-  * [FractalRelated.m ](the Mathematica-Package file " FractalRelated.m " in "Code of special function graph" of "File created in Version 8 ") - package of the Mathematica code
-
-
-From the definitions:  
-$`\Phi_M(c) = \Phi_c(c)`$  
-$`arg_M(c)  = arg(\Phi_M(c)) `$  
-$`arg_c(z) = arg(\Phi_c(z)) `$  
-so [external angle of point c on the parameter plane is equal to external angle of the point z=c on the dynamic plane](https://en.wikipedia.org/wiki/External_ray)  
-$`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
-[//]: # "\Phi_M(c) \overset{def}{=} \Phi_c(c)`"
-
-where :
-* $`arg_M`$ is exernal angle on the parameter plane
-* $`arg_c`$ is the external angle on the dynamic plane
-* $`arg`$ is the angle ( argument, phase) of complex number
-* $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the dynamic plane
-* $`\Phi_M`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the parameter plane
-
-
-$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}} `$
-
-
-
-Steps:
-* on the parameter plane choose point c
-* switch to the dynamic z-plane for c (not equal to zero)
-  * take z= c 
-  * check if it escapes = from exterior of filled Julia set
-  * if yes: iterate z ( forward iteration  f_c(z) ) until it will be near infinity
-  * remember number of final iteration when $`abs(z_n) > R_{limit} `$
-  * switch plane to z-plane for c=0
-* on the dynamic z-plane for c equal to zero
-  * make n backward iterations 
-  * angle of last z is aproximation of external angle 
-  
-  
-  
-Near infinity external angle of z is equal to angle of z so we can switch the plane
-
-
->" since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expres>sion formula"  
-
-
-Souichiro-Ikebe ( automatic translation)  
 
 
 
@@ -197,24 +149,24 @@ arg(z/(z-c)) = arg(z/b)
 Here is Maxima CAS code:   
 ```
 (%i2) z:x+y*%i;
-(%o2)                                                                                                           %i y + x
+(%o2)            	%i y + x
 (%i3) b:u+v*%i;
-(%o3)                                                                                                           %i v + u
-(%i4) creal(z/b);
-                                                                                                                  %i y + x
-(%o4)                                                                                                       creal(--------)
-                                                                                                                  %i v + u
+(%o3)            	%i v + u
+(%i4) creal(z/b); 
+	                      %i y + x
+(%o4)                   creal(--------)
+                              %i v + u
 (%i5) realpart(z/b);
-                                                                                                               v y + u x
-(%o5)                                                                                                          ---------
-                                                                                                                 2    2
-                                                                                                                v  + u
+                              v y + u x
+                              ---------
+                               2    2
+                              v  + u
 (%i6) imagpart(z/b);
-                                                                                                               u y - v x
-(%o6)                                                                                                          ---------
-                                                                                                                 2    2
-                                                                                                                v  + u
-(%i7) 
+                             u y - v x
+                             ---------
+                              2    2
+                             v  + u
+
 
 ```
 
@@ -321,7 +273,7 @@ Files:
 Links:
 * [wikibooks](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/stripeAC)
 * [gitlab](https://gitlab.com/adammajewski/mandelbrot_wiki_ACh)
-* [wiki by Arnaoud Cheritat](https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/Mandelbrot_set)
+* [wiki by Arnaud Cheritat](https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/Mandelbrot_set)
 * [commons - whole set](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_Stripe_Average_Coloring.png)
 * [commons - wake 1/3](https://commons.wikimedia.org/wiki/File:Stripe_Average_Coloring_-_Mandelbrot_set_zoom_(_wake_1over3_).png)
 
