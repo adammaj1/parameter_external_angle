@@ -1,7 +1,22 @@
 
 # The Böttcher function
-The Böttcher function maps the complement of the Mandelbrot set conformally to the complement of the closed unit disk.
-* [Boettcher equation in wikipedia](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation)
+The Böttcher function:
+* maps the complement of the Mandelbrot set (or the filled Julia set)  conformally to the complement of the closed unit disk.
+* is a solution of [Boettcher's functional equation](https://en.wikipedia.org/wiki/B%C3%B6ttcher%27s_equation), so in case of [complex quadratic map](https://en.wikipedia.org/wiki/Complex_quadratic_polynomial)
+
+
+
+$'B(f(z)) = (B(z))^2'$
+
+where:
+
+ - B is Boettchers function
+ - f is [complex quadratic map]
+
+
+
+
+Links
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
 * Böttcher function by Souichiro-Ikebe
   * [description](http://math-functions-1.watson.jp/sub1_spec_390.html#section060)
@@ -50,4 +65,7 @@ Near infinity external angle of z is equal to angle of z so we can switch the pl
 
 
 Souichiro-Ikebe ( automatic translation)  
+
+# solutions
+
 
