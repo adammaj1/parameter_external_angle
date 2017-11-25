@@ -87,14 +87,16 @@ Computed with [Mathematica](http://reference.wolfram.com/language/ref/Mandelbrot
 
 
 
-$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}}  = R e^{i \Theta} `$
+$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}}  = R e^{i \theta}  = e^U e^{i \theta}`$
 
 
 [argument of Boettcher coordinate ( = external angle)](http://math-functions-1.watson.jp/sub1_spec_390.html#section060): 
 
-$`\Theta = \Theta_c(z) = arg(\Phi_c(z)) = arg_c(z) = arg(z) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left(1 + \frac{c}{f_c^{n-1}(z)^2}     \right ) \right )  `$
+$`\theta = \theta_c(z) = arg(\Phi_c(z)) = arg_c(z) = arg(z) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left(1 + \frac{c}{f_c^{n-1}(z)^2}     \right ) \right )  `$
 
 
 Potential ( absolute value = radius = magnitude):
+
+$`\U = \U_c(z) = log|\Phi_c(z)| =  log|z| + \sum_{n=1}^\infty \left( \frac{1}{2^n}*log \left|1 + \frac{c}{f_c^{n-1}(z)^2}     \right | \right )  `$
 
  
