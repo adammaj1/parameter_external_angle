@@ -50,6 +50,9 @@ $`B_M(c) = c + \frac{1}{2} - \frac{1}{8c} + \frac{1}{16c^2} - \frac{5}{128c^3} +
 ![Boettcher and multiplier map on the parameter plane](boettcher.png)
 
 
+Near Mandelbrot set the image of Boettcher map is not good 
+
+
 Files:
 * [boettcher.c](boettcher.c) - c file
 
