@@ -46,6 +46,14 @@ Solutions:
 
 $`B_M(c) = c + \frac{1}{2} - \frac{1}{8c} + \frac{1}{16c^2} - \frac{5}{128c^3} + O(\frac{1}{c^4})`$
 
+
+![Boettcher and multiplier map on the parameter plane](boettcher.png)
+
+
+Files:
+* [boettcher.c](boettcher.c) - c file
+
+
 [On the dynamic plane](http://reference.wolfram.com/language/ref/JuliaSetBoettcher.html) : 
 
 $`B_c(z) = z + \frac{0.05}{z} + \frac{0.02375}{z^3} - \frac{0.0036875}{z^5} + O(\frac{1}{z^6})`$
