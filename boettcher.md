@@ -15,6 +15,58 @@ where:
 
 
 
+# Notation
+* $`\Phi = B`$ is a Bottcher map ( function)
+* $`arg`$ is the angle ( argument, phase) of complex number
+* $`arg_M`$ is exernal angle on the parameter plane
+* $`arg_c`$ is the external angle on the dynamic plane
+* $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the dynamic plane
+* $`\Phi_M`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the parameter plane
+
+
+# solutions of the Boettchers equation
+
+Solutions: 
+* closed form 
+* aproximation ( series )
+
+## closed form solutions
+
+## aproximations
+
+
+
+
+### asymptotic series approximation for the Böttcher function
+
+
+$`B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z^4})`$
+
+Computed with [Mathematica](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html)
+
+### computing argument and radius separtely
+
+
+
+>" since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expression formula"  
+
+
+Souichiro-Ikebe ( automatic translation)  
+
+
+
+$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}}  = R e^{i \theta}  = e^U e^{i \theta}`$
+
+
+[argument of Boettcher coordinate ( = external angle)](http://math-functions-1.watson.jp/sub1_spec_390.html#section060): 
+
+$`\theta = \theta_c(z) = arg(\Phi_c(z)) = arg_c(z) = arg(z) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left(1 + \frac{c}{f_c^{n-1}(z)^2}     \right ) \right )  `$
+
+
+Potential ( absolute value = radius = magnitude):
+
+$`U = U_c(z) = log|\Phi_c(z)| =  log|z| + \sum_{n=1}^\infty \left( \frac{1}{2^n}*log \left|1 + \frac{c}{f_c^{n-1}(z)^2}     \right | \right )  `$
+
 
 Links
 * [Algorithm](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/boettcher#ArgPhi_-_External_angle_-_angular_component_of_complex_potential)
@@ -24,6 +76,10 @@ Links
   * [FractalRelated.m ](the Mathematica-Package file " FractalRelated.m " in "Code of special function graph" of "File created in Version 8 ") - package of the Mathematica code
 
 
+### n
+
+(?????)
+
 From the definitions:  
 $`\Phi_M(c) = \Phi_c(c)`$  
 $`arg_M(c)  = arg(\Phi_M(c)) `$  
@@ -32,12 +88,7 @@ so [external angle of point c on the parameter plane is equal to external angle 
 $`arg_M(c) = arg_c(z=c) = arg(\Phi_c(z= c)) = arg(\Phi_M(c)) `$
 [//]: # "\Phi_M(c) \overset{def}{=} \Phi_c(c)`"
 
-where :
-* $`arg_M`$ is exernal angle on the parameter plane
-* $`arg_c`$ is the external angle on the dynamic plane
-* $`arg`$ is the angle ( argument, phase) of complex number
-* $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the dynamic plane
-* $`\Phi_M`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the parameter plane
+
 
 
 $` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}} `$
@@ -59,44 +110,4 @@ Steps:
   
   
 Near infinity external angle of z is equal to angle of z so we can switch the plane
-
-
->" since the argument of the Boettcher function is not a main value but a value obtained by retaining multivalency, in fact, numerical calculation using this limit expression formula is very difficult. However, an infinite series easily obtained by transforming the limit expres>sion formula"  
-
-
-Souichiro-Ikebe ( automatic translation)  
-
-# solutions of the Boettchers equation
-
-Solutions: 
-* closed for 
-* aproximations
-
-## closed form solutions
-
-## aproximations
-
-### asymptotic series approximation for the Böttcher function
-
-
-$`B(z) = z + \frac{1}{2} - \frac{1}{8z} + \frac{1}{16z^2} - \frac{5}{128z^3} + O(\frac{1}{z^4})`$
-
-Computed with [Mathematica](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html)
-
-### computing argument and radius separtely
-
-
-
-$` \Phi_c(z) = \lim_{n\to \infty} (f_c^n(z))^{2^{-n}}  = R e^{i \theta}  = e^U e^{i \theta}`$
-
-
-[argument of Boettcher coordinate ( = external angle)](http://math-functions-1.watson.jp/sub1_spec_390.html#section060): 
-
-$`\theta = \theta_c(z) = arg(\Phi_c(z)) = arg_c(z) = arg(z) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left(1 + \frac{c}{f_c^{n-1}(z)^2}     \right ) \right )  `$
-
-
-Potential ( absolute value = radius = magnitude):
-
-$`U = U_c(z) = log|\Phi_c(z)| =  log|z| + \sum_{n=1}^\infty \left( \frac{1}{2^n}*log \left|1 + \frac{c}{f_c^{n-1}(z)^2}     \right | \right )  `$
-
  
