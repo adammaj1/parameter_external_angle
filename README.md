@@ -1,7 +1,7 @@
 
 # What is external angle ? 
 
-external angle 
+[external angle](boettcher.md#computing-argument-and-radius-separtely) 
 * [external ray in wikipedia](https://en.wikipedia.org/wiki/External_ray)
 * [Boettcher function](boettcher.md)
 
@@ -270,109 +270,13 @@ Files:
 
 
 Links:
-* [wikibooks](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/stripeAC)
-* [gitlab](https://gitlab.com/adammajewski/mandelbrot_wiki_ACh)
+* [wikibooks ](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/stripeAC)
+* [gitlab repo ](https://gitlab.com/adammajewski/mandelbrot_wiki_ACh)
 * [wiki by Arnaud Cheritat](https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/Mandelbrot_set)
 * [commons - whole set](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_Stripe_Average_Coloring.png)
 * [commons - wake 1/3](https://commons.wikimedia.org/wiki/File:Stripe_Average_Coloring_-_Mandelbrot_set_zoom_(_wake_1over3_).png)
 
 
-```c
-// the addend function
-// input : complex number z
-// output : double number t 
-double Give_t(double complex z){
-
-  return 0.5+0.5*sin(s*carg(z));
-
-}
-
-/*
-  input :
-  - complex number
-  - intege
-  output = average or other estimators, like distance or interior
- 
-*/
-double Give_Arg(double complex C , int iMax)
-{
-  int i=0; // iteration 
-   
-   
-  double complex Z= 0.0; // initial value for iteration Z0
-  double A = 0.0; // A(n)
-  double prevA = 0.0; // A(n-1)
-  double R; // =radius = cabs(Z)
-  double d; // smooth iteration count
-  double complex dC = 0; // derivative
-  double de; // = 2 * z * log(cabs(z)) / dc;
-   
-    
-  // iteration = computing the orbit
-  for(i=0;i<iMax;i++)
-    { 
-    
-      dC = 2 * Z * dC + 1; 
-      Z=Z*Z+C; // https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/qpolynomials
-      
-      if (i>i_skip) A += Give_t(Z); // 
-      
-      R = cabs(Z);
-      if(R > EscapeRadius) break; // exterior of M set
-   
-      prevA = A; // save value for interpolation
-        
-    } // for(i=0
-   
-   
-  if (i == iMax) 
-    A = -1.0; // interior 
-  else { // exterior
-    de = 2 * R * log(R) / cabs(dC);
-    if (de < PixelWidth) A = FP_ZERO; //  boundary
-    else {
-      // computing interpolated average
-      A /= (i - i_skip) ; // A(n)
-      prevA /= (i - i_skip - 1) ; // A(n-1) 
-      // smooth iteration count
-      d = i + 1 + log(lnER/log(R))/M_LN2;
-      d = d - (int)d; // only fractional part = interpolation coefficient
-      // linear interpolation
-      A = d*A + (1.0-d)*prevA;
-     } 
-  }
-    
-  return A;
-}
-```
-
-and coloring: 
-```c
-  // compute 
-  arg = Give_Arg( c, IterationMax);
-     
-  // 
-  if (arg < 0.0)
-     /*  interior of Mandelbrot set = inside_color =  */
-      b = 0; 
-    
-  else // exterior and boundary 
-     { 
-     
-     if (arg == FP_ZERO) b= 255; // boundary 
-       else b = (unsigned char) (255 - 255*arg );
-      
-      
-    };
-    
-    
-    // gray gradient
-      color[0]= b;  /* Red*/
-      color[1]= b;  /* Green */ 
-      color[2]= b;  /* Blue */
-  return 0;
-}
-``` 
 
 ![whole set ](samm.png)
 
