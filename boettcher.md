@@ -54,6 +54,10 @@ Boettcher and multiplier map on the parameter plane:
 * The exterior of Mandelbrot set : near the set the image is not good, probaly more terms of Boettcher map are needed : $` O(\frac{1}{c^4})`$
 *  interior : [Multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/def_cqp#Multiplier_map) works good 
 
+Compare it with [Stripe Average Coloring](README.md#stripe-average-coloring-or-method-sam-or-sac):
+
+![whole set ](samm.png)
+
 
 Files:
 * [boettcher.c](boettcher.c) - c file
