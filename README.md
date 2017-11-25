@@ -31,6 +31,8 @@ $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_
 ![whole set using gray colors](mturng.png)
 
 
+Here one can see errors in computing : compare with [Stripe Average Coloring ](README.md#stripe-average-coloring-or-method-sam-or-sac) 
+
 ![zoom of wake 1/3](mturn3.png)
 
 
