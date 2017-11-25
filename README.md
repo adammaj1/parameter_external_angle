@@ -11,16 +11,13 @@ external angle
 
 
 Methods:
-* [series expansion formula of the Boettcher function](README.md#series-expansion-formula-of-the-boettcher-function)
+* [series expansion formula of the Boettcher function](README.md#series-expansion-formula-for-computing-external-angle)
 * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
 * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
 * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
 
-## series expansion formula of the Boettcher function
 
-
-
-### series expansion formula for computing external angles
+## series expansion formula for computing external angle
 
 $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
 
