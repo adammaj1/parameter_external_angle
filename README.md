@@ -1,10 +1,25 @@
 
 # What is external angle ? 
 
+External angle is:
+* [The external angle is a real number ](https://mrob.com/pub/muency/externalangle.html) - description by Robert P Munafo
+* it is the angle of external ray
+* it is the angle of point from the exterior of mandelbrot set, but it is not arg(c) but angle 
+
 [external angle](boettcher.md#computing-argument-and-radius-separtely) 
 * [external ray in wikipedia](https://en.wikipedia.org/wiki/External_ray)
 * [Boettcher function](boettcher.md)
 
+
+
+
+
+## Names 
+* external argument
+
+## Units and ..
+* when measured in [turns](https://en.wikipedia.org/wiki/Turn_(geometry)) it is a real number between 0.0 and 1.0
+* when measured in radians it is a real number between 0.0 and $`2\Pi`$
 
 # How to compute external angle?
 
