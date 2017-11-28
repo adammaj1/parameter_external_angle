@@ -15,7 +15,7 @@ Methods:
 * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
 * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
 * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
-
+* [argument of the Boettcher function](README.md#argument-of-the-boettcher-functional)
 
 ## series expansion formula for computing external angle
 
@@ -234,7 +234,7 @@ Code:
 * [tavis.cpp ](tavis.cpp) - compute external angle of point cx, cy
 
 
-## argument of the Boettcher functional
+## argument of the Boettcher function
 
 One can use argument of [Boettcher function](boettcher.md) for computing external argument (angle). 
 
