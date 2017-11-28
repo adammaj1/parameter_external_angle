@@ -236,7 +236,11 @@ Code:
 
 ## argument of the Boettcher functional
 
-One can use Mathematica 
+One can use argument of [Boettcher function](boettcher.md) for computing external argument (angle). 
+
+
+
+[Mathematica ](https://lab.wolframcloud.com/app/objects/4ef1f57b-368e-41ab-bd5e-dee05dd9b7c3) [Boettcher function](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html) 
 
 ```
 ArrayPlot[Table[Sin[100 Arg@MandelbrotSetBoettcher[x + I*y]], {y, -1, 1, .01}, {x, -2.6, .5, .01}], ImageSize->Full]
