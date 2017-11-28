@@ -233,6 +233,26 @@ See also:
 Code:
 * [tavis.cpp ](tavis.cpp) - compute external angle of point cx, cy
 
+
+## argument of the Boettcher functional
+
+One can use Mathematica 
+
+```
+ArrayPlot[Table[Sin[100 Arg@MandelbrotSetBoettcher[x + I*y]], {y, -1, 1, .01}, {x, -2.6, .5, .01}], ImageSize->Full]
+```
+
+the result:
+
+ 
+![](argb.png)
+
+
+
+
+
+
+
 ##  Douady and Hubbard method for c near the real axis
 
 >
