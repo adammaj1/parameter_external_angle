@@ -1,9 +1,13 @@
 
 
 TOC
-* (What is external angle ? )[what-is-external-angle-]
-* (How to compute external angle?)[how-to-compute-external-angle]
-
+* [What is external angle ?](README.md#what-is-external-angle-)
+* [How to compute external angle?](README.md#how-to-compute-external-angle)
+  * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
+  * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
+  * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
+  * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
+  * [argument of the Boettcher function](README.md#argument-of-the-boettcher-function)
 
 
 
