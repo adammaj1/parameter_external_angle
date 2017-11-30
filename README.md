@@ -27,15 +27,17 @@
 * [](http://floating-point-gui.de/ What Every Programmer Should Know About Floating-Point Arithmetic )
 * [Stackoverflow : Why Are Floating Point Numbers Inaccurate?](http://stackoverflow.com/questions/21895756/why-are-floating-point-numbers-inaccurate )
 * [HOW TO WORK WITH ONE-DI MENSIONAL QUADRATIC MAPS  G. Pastor  , M. Romera, G. Álvarez, and F. Montoya ](http://www.iec.csic.es/~gerardo/publica/Pastor03.pdf) 
+* [tut](http://kipirvine.com/asm/workbook/floating_tut.htm)
+
 ### decimal number (base = 10 ) 
 * real number
-** ratio = fraction ( Finite Continued fraction )  = rational number ( if number can not be represented as a ratio then it is irrational number ) 
+  * ratio = fraction ( Finite Continued fraction )  = rational number ( if number can not be represented as a ratio then it is irrational number ) 
 *** in lowest terms ( irreducible form ) : $`\tfrac{1}{21}`$
 *** reducible form
 **** in explicit normalized form ( only when denominator is odd ): $`\tfrac{3}{63} = \tfrac{3}{2^{6}-1}`$
 *** irrational number  
 **** infinite continued fraction
-**  decimal floating point number $`0.\overline{047619}`$
+  *  floating point number $`0.\overline{047619}`$
 *** finite expansion
 *** endless expansion 
 ****  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers<ref>[http://www.homeschoolmath.net/teaching/irrational_numbers.php home school math  : The fascinating irrational numbers]</ref>)
@@ -44,12 +46,12 @@
 ***** mixed = eventually periodic ( preperiod > 0 , period > 0 ) 
 
 ### binary number ( base = 2 
-(http://kipirvine.com/asm/workbook/floating_tut.htm)
-* binary rational number ( ratio) $`\tfrac{1}{10101}`$
-* binary real number
-** binary floating point number ( scientific notation )
+
+* rational number ( ratio) $`\tfrac{1}{10101}`$
+* real number
+** floating point number ( scientific notation )
 ** Raw binary (  raw IEEE format ) 
-** binary fixed point number ( notation) 
+**  fixed point number ( notation) 
 *** with repeating sequences : $`0.\overline{000011}`$
 *** with endless expansion <math>0.000011000011000011000011...</math>
 
