@@ -250,7 +250,7 @@ Now one can skip:
 
 
 Files:
-* [mturn.c](mturnc.c) - c file
+* [mturn.c](mturn.c) - c file
 * [mturn.png](mturn.png) - whole set using palette colors
 * [mturng.png](mturng.png) - whole set using gray colors
 * [mturn3.png](mturn3.png) - zoom of wake 1/3 using palette colors
