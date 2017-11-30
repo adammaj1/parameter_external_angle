@@ -45,7 +45,7 @@ Solutions:
 
 
 
-[the Laurent series expansions of $`\Phi_M(c)`$ near infinity](https://sites.math.washington.edu/~morrow/336_14/papers/alain.pdf)
+[the Laurent series expansions](https://en.wikipedia.org/wiki/Formal_power_series#Formal_Laurent_series) of $`\Phi_M(c)`$ near infinity[by Alain Orbino]](https://sites.math.washington.edu/~morrow/336_14/papers/alain.pdf)
 
 $`\Phi_M(c) = c + a_0 + \frac{a_1}{c}+ + \frac{a_2}{c^2}+ . . . + + \frac{a_{k(n)}}{c^{k(n)}} `$
 
