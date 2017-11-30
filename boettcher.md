@@ -24,7 +24,7 @@ where:
 * $`arg_c`$ is the external angle on the dynamic plane
 * $`\Phi_c`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the dynamic plane
 * $`\Phi_M`$ is [the Boettcher map ](https://en.wikipedia.org/wiki/External_ray#Dynamical_plane_.3D_z-plane) on the parameter plane
-
+* the result of the Boettcher function is called Boettcher coordinate
 
 # solutions of the Boettchers equation
 
