@@ -9,7 +9,7 @@ TOC
   * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
   * [argument of the Boettcher coordinate](README.md#argument-of-the-boettcher-coordinate)
 * [See also](README.md#see-also)
-* [technical notes](README.md#technical-note)
+* [technical notes](README.md#technical-notes)
 
 
 # What is the external angle ? 
