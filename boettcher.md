@@ -28,6 +28,8 @@ where:
 
 # solutions of the Boettchers equation
 
+
+
 Solutions: 
 * closed form 
 * aproximation ( series )
@@ -40,6 +42,19 @@ Solutions:
 
 
 ### asymptotic series approximation for the Böttcher function
+
+
+
+[the Laurent series expansions of $`\Phi_M(c)`$ near infinity](https://sites.math.washington.edu/~morrow/336_14/papers/alain.pdf)
+
+$`\Phi_M(c) = c + a_0 + \frac{a_1}{c}+ + \frac{a_2}{c^2}+ . . . + + \frac{a_{k(n)}}{c^{k(n)}} `$
+
+with 
+
+$`k (n) = 2^{n+1} − 3`$
+
+
+
 
 
 One can find it using:
