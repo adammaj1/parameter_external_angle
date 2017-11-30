@@ -1,4 +1,12 @@
 
+
+TOC
+* (What is external angle ? )[what-is-external-angle-]
+* (How to compute external angle?)[how-to-compute-external-angle]
+
+
+
+
 # What is external angle ? 
 
 [External angle](boettcher.md#computing-argument-and-radius-separtely):
