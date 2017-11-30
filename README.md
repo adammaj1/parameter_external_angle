@@ -28,6 +28,7 @@
 * [Stackoverflow : Why Are Floating Point Numbers Inaccurate?](http://stackoverflow.com/questions/21895756/why-are-floating-point-numbers-inaccurate )
 * [HOW TO WORK WITH ONE-DI MENSIONAL QUADRATIC MAPS  G. Pastor  , M. Romera, G. Álvarez, and F. Montoya ](http://www.iec.csic.es/~gerardo/publica/Pastor03.pdf) 
 * [tut](http://kipirvine.com/asm/workbook/floating_tut.htm)
+* [home school math  : The fascinating irrational numbers](http://www.homeschoolmath.net/teaching/irrational_numbers.php )
 
 ### decimal number (base = 10 ) 
 * real number
@@ -40,7 +41,7 @@
   *  floating point number $`0.\overline{047619}`$
     * finite expansion
     * endless expansion 
-      *  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers<ref>[http://www.homeschoolmath.net/teaching/irrational_numbers.php home school math  : The fascinating irrational numbers]</ref>)
+      *  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers)
       * Recurring or repeating
         * (strictly) periodic ( preperiod = 0 , preiod > 0 )
         * mixed = eventually periodic ( preperiod > 0 , period > 0 ) 
