@@ -1,10 +1,17 @@
 
 # What is external angle ? 
 
-[External angle](boettcher.md#computing-argument-and-radius-separtely)  is:
-* [The external angle is a real number ](https://mrob.com/pub/muency/externalangle.html) - description by Robert P Munafo
+[External angle](boettcher.md#computing-argument-and-radius-separtely):
+* is a real number -[description by Robert P Munafo](https://mrob.com/pub/muency/externalangle.html) 
 * it is the angle of [external ray](https://en.wikipedia.org/wiki/External_ray) which goes through this point c 
 * it is the angle of point from the exterior of mandelbrot set, but it is not arg(c) but angle of [the Boettcher coordinate](boettcher.md) of point  = $` arg_M(c) `$ 
+* angular part of complex potential
+
+
+# Key words
+* discrete local dynamics
+* complex quadratic polynomial
+* 
 
 
 ## Names 

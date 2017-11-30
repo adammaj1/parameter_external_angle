@@ -42,7 +42,9 @@ Solutions:
 ### asymptotic series approximation for the Böttcher function
 
 
-One can find it using [Mathematica](https://lab.wolframcloud.com/app/objects/4ef1f57b-368e-41ab-bd5e-dee05dd9b7c3) 
+One can find it using:
+* Mathematica function [MandelbrotSetBoettcher](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html)
+* [lab.wolframcloud](https://lab.wolframcloud.com/app/objects/4ef1f57b-368e-41ab-bd5e-dee05dd9b7c3) 
 
 [On the parameter plane](http://reference.wolfram.com/language/ref/MandelbrotSetBoettcher.html) : 
 
@@ -53,6 +55,7 @@ $`B_{M,4}(c) = c + \frac{1}{2} - \frac{1}{8c}        +5/(16 z^2)       -53/(128 
 $`B_{M,5}(c) = c + \frac{1}{2} - \frac{1}{8c}        +5/(16 z^2)        -53/(128 z^3)        +127/(256 z^4)-677/(1024 z^5)+O[1/z]^6`$
 
 ```
+Series[MandelbrotSetBoettcher[z], {z, \[Infinity], 3}]
 z+1/2-1/(8 z)+1/(16 z^2) +O[1/z]^3
 z+1/2-1/(8 z)+1/(16 z^2)- 5/(128 z^3)+O[1/z]^4
 z+1/2-1/(8 z)+5/(16 z^2)-53/(128 z^3)+127/(256 z^4)-677/(1024 z^5)  +O[1/z]^6
