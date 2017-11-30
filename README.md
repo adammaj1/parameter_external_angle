@@ -47,17 +47,14 @@ TOC
 * real number
   * ratio = fraction ( Finite Continued fraction )  = rational number ( if number can not be represented as a ratio then it is irrational number ) 
     * in lowest terms ( irreducible form ) : $`\tfrac{1}{21}`$
-    * reducible form
+    * reducible form 
       * in explicit normalized form ( only when denominator is odd ): $`\tfrac{3}{63} = \tfrac{3}{2^{6}-1}`$
-  * irrational number  
-    * infinite continued fraction
+  * irrational number( infinite continued fraction )
   *  floating point number $`0.\overline{047619}`$
     * finite expansion
     * endless expansion 
       *  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers)
-      * Recurring or repeating  
-        * (strictly) periodic ( preperiod = 0 , preiod > 0 )  
-        * mixed = eventually periodic ( preperiod > 0 , period > 0 )   
+      * Recurring or repeating : (strictly) periodic ( preperiod = 0 , preiod > 0 )  or mixed = eventually periodic ( preperiod > 0 , period > 0 )   
 
 ### binary number ( base = 2 
 
