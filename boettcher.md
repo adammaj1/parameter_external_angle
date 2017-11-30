@@ -175,6 +175,12 @@ Steps:
 Near infinity external angle of z is equal to angle of z so we can switch the plane
 
 
+
+# See also similar topics:
+* computing the external ray
+* computing equipotential curve
+* [computing the external angle](README.md) 
+
 # git ( gitlab)
 
 ```
