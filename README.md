@@ -1,8 +1,8 @@
 
 
 TOC
-* [What is external angle ?](README.md#what-is-external-angle-)
-* [How to compute external angle?](README.md#how-to-compute-external-angle)
+* [What is the external angle ?](README.md#what-is-the-external-angle-)
+* [How to compute the external angle?](README.md#how-to-compute-the-external-angle)
   * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
   * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
   * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
@@ -11,7 +11,7 @@ TOC
 
 
 
-# What is external angle ? 
+# What is the external angle ? 
 
 [External angle](boettcher.md#computing-argument-and-radius-separtely):
 * is a real number -[description by Robert P Munafo](https://mrob.com/pub/muency/externalangle.html) 
@@ -71,7 +71,7 @@ TOC
 
 
 
-# How to compute external angle?
+# How to compute the external angle?
 
 
 
