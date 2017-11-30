@@ -8,7 +8,8 @@ TOC
   * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
   * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
   * [argument of the Boettcher coordinate](README.md#argument-of-the-boettcher-coordinate)
-
+* [See also](README.md#see-also)
+* [technical notes](README.md#technical-note)
 
 
 # What is the external angle ? 
@@ -389,7 +390,16 @@ Files:
 * [Plotting field lines during iteration by Chris Thomasson](http://www.fractalforums.com/new-theories-and-research/plotting-field-lines-during-iteration)
 
 
-# git ( gitlab)
+
+
+
+# technical notes
+GitLab uses:
+* the Redcarpet Ruby library for [Markdown processing](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md)
+* [KaTeX](https://khan.github.io/KaTeX/) to render [math written with the LaTeX syntax](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md), but [only subset](https://khan.github.io/KaTeX/function-support.html). [Here is used version](https://github.com/gitlabhq/gitlabhq/blob/a0715f079c143a362a7f6157db45020b8432003e/vendor/assets/javascripts/katex.js)
+
+
+## git ( gitlab)
 
 ```
 cd existing_folder
@@ -399,10 +409,4 @@ git add .
 git commit -m "Initial commit"
 git push -u origin master
 ```
-
-
-# technical note
-GitLab uses:
-* the Redcarpet Ruby library for [Markdown processing](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md)
-* [KaTeX](https://khan.github.io/KaTeX/) to render [math written with the LaTeX syntax](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md), but [only subset](https://khan.github.io/KaTeX/function-support.html). [Here is used version](https://github.com/gitlabhq/gitlabhq/blob/a0715f079c143a362a7f6157db45020b8432003e/vendor/assets/javascripts/katex.js)
 
