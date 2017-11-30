@@ -32,28 +32,28 @@
 ### decimal number (base = 10 ) 
 * real number
   * ratio = fraction ( Finite Continued fraction )  = rational number ( if number can not be represented as a ratio then it is irrational number ) 
-*** in lowest terms ( irreducible form ) : $`\tfrac{1}{21}`$
-*** reducible form
-**** in explicit normalized form ( only when denominator is odd ): $`\tfrac{3}{63} = \tfrac{3}{2^{6}-1}`$
-*** irrational number  
-**** infinite continued fraction
+    * in lowest terms ( irreducible form ) : $`\tfrac{1}{21}`$
+    * reducible form
+      * in explicit normalized form ( only when denominator is odd ): $`\tfrac{3}{63} = \tfrac{3}{2^{6}-1}`$
+  * irrational number  
+    * infinite continued fraction
   *  floating point number $`0.\overline{047619}`$
-*** finite expansion
-*** endless expansion 
-****  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers<ref>[http://www.homeschoolmath.net/teaching/irrational_numbers.php home school math  : The fascinating irrational numbers]</ref>)
-**** Recurring or repeating
-***** (strictly) periodic ( preperiod = 0 , preiod > 0 )
-***** mixed = eventually periodic ( preperiod > 0 , period > 0 ) 
+    * finite expansion
+    * endless expansion 
+      *  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers<ref>[http://www.homeschoolmath.net/teaching/irrational_numbers.php home school math  : The fascinating irrational numbers]</ref>)
+      * Recurring or repeating
+        * (strictly) periodic ( preperiod = 0 , preiod > 0 )
+        * mixed = eventually periodic ( preperiod > 0 , period > 0 ) 
 
 ### binary number ( base = 2 
 
 * rational number ( ratio) $`\tfrac{1}{10101}`$
 * real number
-** floating point number ( scientific notation )
-** Raw binary (  raw IEEE format ) 
-**  fixed point number ( notation) 
-*** with repeating sequences : $`0.\overline{000011}`$
-*** with endless expansion <math>0.000011000011000011000011...</math>
+  * floating point number ( scientific notation )
+    * Raw binary (  raw IEEE format ) 
+    *  fixed point number ( notation) 
+      * with repeating sequences : $`0.\overline{000011}`$
+      * with endless expansion $`0.000011000011000011000011...`$
 
 
 
