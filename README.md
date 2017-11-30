@@ -55,9 +55,9 @@ TOC
     * finite expansion
     * endless expansion 
       *  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers)
-      * Recurring or repeating
-        * (strictly) periodic ( preperiod = 0 , preiod > 0 )
-        * mixed = eventually periodic ( preperiod > 0 , period > 0 ) 
+      * Recurring or repeating  
+        * (strictly) periodic ( preperiod = 0 , preiod > 0 )  
+        * mixed = eventually periodic ( preperiod > 0 , period > 0 )   
 
 ### binary number ( base = 2 
 
