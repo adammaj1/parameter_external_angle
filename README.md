@@ -22,9 +22,9 @@
 * when measured in radians it is a real number between 0.0 and $`2\Pi`$
 * when measured in degrees it is a real number between 0.0 and 360
 
-## base and expansion of external angle's numerical value
+## base and expansion of numerical value
 * [nine-ways-to-display-a-floating-point-number](http://www.exploringbinary.com/nine-ways-to-display-a-floating-point-number/)
-* [](http://floating-point-gui.de/ What Every Programmer Should Know About Floating-Point Arithmetic )
+* [What Every Programmer Should Know About Floating-Point Arithmetic ](http://floating-point-gui.de/ What Every Programmer Should Know About Floating-Point Arithmetic )
 * [Stackoverflow : Why Are Floating Point Numbers Inaccurate?](http://stackoverflow.com/questions/21895756/why-are-floating-point-numbers-inaccurate )
 * [HOW TO WORK WITH ONE-DI MENSIONAL QUADRATIC MAPS  G. Pastor  , M. Romera, G. Álvarez, and F. Montoya ](http://www.iec.csic.es/~gerardo/publica/Pastor03.pdf) 
 * [tut](http://kipirvine.com/asm/workbook/floating_tut.htm)
