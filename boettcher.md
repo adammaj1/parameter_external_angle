@@ -45,7 +45,7 @@ Solutions:
 
 
 
-[the Laurent series expansions](https://en.wikipedia.org/wiki/Formal_power_series#Formal_Laurent_series) of $`\Phi_M(c)`$ near infinity[by Alain Orbino]](https://sites.math.washington.edu/~morrow/336_14/papers/alain.pdf)
+[the Laurent series expansions](https://en.wikipedia.org/wiki/Formal_power_series#Formal_Laurent_series) of $`\Phi_M(c)`$ near infinity[by Alain Orbino](https://sites.math.washington.edu/~morrow/336_14/papers/alain.pdf)
 
 $`\Phi_M(c) = c + a_0 + \frac{a_1}{c}+ + \frac{a_2}{c^2}+ . . . + + \frac{a_{k(n)}}{c^{k(n)}} `$
 
@@ -181,16 +181,7 @@ Near infinity external angle of z is equal to angle of z so we can switch the pl
 * computing equipotential curve
 * [computing the external angle](README.md) 
 
-# git ( gitlab)
 
-```
-cd existing_folder
-git init
-git remote add origin git@gitlab.com:adammajewski/parameter_external_angle.git
-git add .
-git commit -m "Initial commit"
-git push -u origin master
-```
 
 
 # technical note
@@ -199,3 +190,14 @@ GitLab uses:
 * [KaTeX](https://khan.github.io/KaTeX/) to render [math written with the LaTeX syntax](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/user/markdown.md), but [only subset](https://khan.github.io/KaTeX/function-support.html). [Here is used version](https://github.com/gitlabhq/gitlabhq/blob/a0715f079c143a362a7f6157db45020b8432003e/vendor/assets/javascripts/katex.js)
 
  
+ 
+## git ( gitlab) code
+
+```
+cd existing_folder
+git init
+git remote add origin git@gitlab.com:adammajewski/parameter_external_angle.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+``` 
