@@ -81,10 +81,7 @@ z+1/2-1/(8 z)+5/(16 z^2)-53/(128 z^3)+127/(256 z^4)-677/(1024 z^5)+2221/(2048 z^
 z+1/2-1/(8 z)+5/(16 z^2)-53/(128 z^3)+127/(256 z^4)-677/(1024 z^5)+2221/(2048 z^6)-61133/(32768 z^7)+205563/(65536 z^8)-1394207/(262144 z^9)+4852339/(524288 z^10)+O[1/z]^11
 ```
 
->
-The series expansion of the inverse of  Phi_M(c)  does not work because it converges very slowly close to the boundary.  If it was faster,  M  would be known to be [locally connected](https://en.wikipedia.org/wiki/Mandelbrot_set#Local_connectivity).
->   
-Wolf Jung
+
 
 
 ![Boettcher and multiplier map on the parameter plane](boettcher.png)
@@ -93,6 +90,13 @@ Wolf Jung
 Boettcher and multiplier map on the parameter plane:
 * The exterior of Mandelbrot set : near the set the image is not good, probaly more terms of Boettcher map are needed : $` O(\frac{1}{c^4})`$
 *  interior : [Multiplier map](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/def_cqp#Multiplier_map) works good 
+
+
+>
+The series expansion of the inverse of  Phi_M(c)  does not work because it converges very slowly close to the boundary.  If it was faster,  M  would be known to be [locally connected](https://en.wikipedia.org/wiki/Mandelbrot_set#Local_connectivity).
+>   
+Wolf Jung
+
 
 Compare it with [Stripe Average Coloring](README.md#stripe-average-coloring-or-method-sam-or-sac):
 
