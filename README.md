@@ -25,7 +25,11 @@ Points which have the external angle:
 
 
 
-Methods for the boundary points: 
+Methods for the boundary points:
+* Schleicher algorithm 
+* tuning algorithm by Douady
+  * [subwake](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/subwake)
+* [outer algorithm by Pastor](http://www.tic.itefi.csic.es/gerardo/publica/Pastor07a.pdf)
 
 
 Methods for the exterior points:
