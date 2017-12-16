@@ -1,7 +1,7 @@
 
 
 TOC
-* [What is the external angle ?](README.md#what-is-the-external-angle-)
+* [What is the external angle ?](angle.md#what-is-the-external-angle-)
 * [How to compute the external angle?](README.md#how-to-compute-the-external-angle)
   * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
   * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
@@ -9,71 +9,26 @@ TOC
   * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
   * [argument of the Boettcher coordinate](README.md#argument-of-the-boettcher-coordinate)
 * [See also](README.md#see-also)
+* Key words
 * [technical notes](README.md#technical-notes)
 
 
-# What is the external angle ? 
-
-[External angle](boettcher.md#computing-argument-and-radius-separtely):
-* is a real number -[description by Robert P Munafo](https://mrob.com/pub/muency/externalangle.html) 
-* it is the angle of [external ray](https://en.wikipedia.org/wiki/External_ray) which goes through this point c 
-* it is the angle of point from the exterior of mandelbrot set, but it is not arg(c) but angle of [the Boettcher coordinate](boettcher.md) of point  = $` arg_M(c) `$ 
-* angular part of complex potential
-
-
-# Key words
-* discrete local dynamics
-* complex quadratic polynomial
-* 
-
-
-## Names 
-* external argument
-
-## Units and domain
-* when measured in [turns](https://en.wikipedia.org/wiki/Turn_(geometry)) it is a real number between 0.0 and 1.0
-* when measured in radians it is a real number between 0.0 and $`2\Pi`$
-* when measured in degrees it is a real number between 0.0 and 360
-
-## base and expansion of numerical value
-* [nine-ways-to-display-a-floating-point-number](http://www.exploringbinary.com/nine-ways-to-display-a-floating-point-number/)
-* [What Every Programmer Should Know About Floating-Point Arithmetic ](http://floating-point-gui.de/ What Every Programmer Should Know About Floating-Point Arithmetic )
-* [Stackoverflow : Why Are Floating Point Numbers Inaccurate?](http://stackoverflow.com/questions/21895756/why-are-floating-point-numbers-inaccurate )
-* [HOW TO WORK WITH ONE-DI MENSIONAL QUADRATIC MAPS  G. Pastor  , M. Romera, G. Álvarez, and F. Montoya ](http://www.iec.csic.es/~gerardo/publica/Pastor03.pdf) 
-* [tut](http://kipirvine.com/asm/workbook/floating_tut.htm)
-* [home school math  : The fascinating irrational numbers](http://www.homeschoolmath.net/teaching/irrational_numbers.php )
-
-### decimal number (base = 10 ) 
-* real number
-  * ratio = fraction ( Finite Continued fraction )  = rational number ( if number can not be represented as a ratio then it is irrational number ) 
-    * in lowest terms ( irreducible form ) : $`\tfrac{1}{21}`$
-    * reducible form 
-      * in explicit normalized form ( only when denominator is odd ): $`\tfrac{3}{63} = \tfrac{3}{2^{6}-1}`$
-  * irrational number( infinite continued fraction )
-  *  floating point number $`0.\overline{047619}`$
-    * finite expansion
-    * endless expansion 
-      *  continue infinitely without repeating (in which case the number is called irrational = non-repeating non-terminating decimal numbers)
-      * Recurring or repeating : (strictly) periodic ( preperiod = 0 , preiod > 0 )  or mixed = eventually periodic ( preperiod > 0 , period > 0 )   
-
-### binary number ( base = 2 
-
-* rational number ( ratio) $`\tfrac{1}{10101}`$
-* real number
-  * floating point number ( scientific notation )
-    * Raw binary (  raw IEEE format ) 
-    *  fixed point number ( notation) 
-      * with repeating sequences : $`0.\overline{000011}`$
-      * with endless expansion $`0.000011000011000011000011...`$
 
 
 
 
 # How to compute the external angle?
 
+Points which have the external angle:
+* point of the boundary of the Mandelbrot set ( landing point of the external ray ). It can have more then one external angle : biaccesible, triaccesible , ...
+* point of the exterior of the Mandelbrot set ( only ona external angle) 
 
 
-Methods:
+
+Methods for the boundary points: 
+
+
+Methods for the exterior points:
 * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
 * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
 * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
@@ -83,6 +38,8 @@ Methods:
 ## series expansion formula for computing external angle
 
 $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
+
+[Gerrit comment](https://fractalforums.org/fractal-mathematics-and-new-theories/28/pdf-file-in-japan/) : "any Misiurewicz point with preperiod 1 (I think those are all terminal points?) will encounter a division by zero when fnc(c)=c."
 
 
 ![whole set using palette colors](mturn.png)
@@ -322,6 +279,8 @@ the result:
 
 ##  Douady and Hubbard method for c near the real axis
 
+[Douady A. (1986) Julia Sets and the Mandelbrot Set. In the book : The Beauty of Fractals. Springer, Berlin, Heidelberg, Print ISBN 978-3-642-61719-5](https://link.springer.com/chapter/10.1007/978-3-642-61717-1_13)
+
 >
 Douady and Hubbard found a simple method for computing external angles for values of c outside of M and near the real axis. Call such an angle 2Pi*Ray, where 0 <= Ray < 1.   
 The number Ray can be written as a binary decimal, i.e, as a sequence of zeroes and ones. 
@@ -387,6 +346,11 @@ Files:
 * [Plotting field lines during iteration by Chris Thomasson](http://www.fractalforums.com/new-theories-and-research/plotting-field-lines-during-iteration)
 
 
+# Key words
+* discrete local complex dynamics
+* complex quadratic polynomial
+* basin of attraction of infinity
+* basin of attraction of superattracting fixed point
 
 
 
