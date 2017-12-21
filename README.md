@@ -43,8 +43,6 @@ Methods for the exterior points:
 
 $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
 
-[Gerrit comment](https://fractalforums.org/fractal-mathematics-and-new-theories/28/pdf-file-in-japan/) : "any Misiurewicz point with preperiod 1 (I think those are all terminal points?) will encounter a division by zero when fnc(c)=c."
-
 
 ![whole set using palette colors](mturn.png)
 
