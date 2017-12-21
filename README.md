@@ -44,6 +44,16 @@ Methods for the exterior points:
 $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_c^n(c)}{f_c^n(c)-c}     \right ) \right )  `$
 
 
+> The principal value of the argument is the unique angle with -π<arg(z)≤π. 
+> This definition is used because a function should be single-valued. 
+> However, a discontinuity is introduced artificially when a point z is crossing the negative real axis, 
+> say going from i through -1 to -i: its argument should go from π/2 through π to 3π/2, 
+> but the principal value goes from π/2 to π, jumps to -π, and goes to -π/2. 
+
+  [Wolf Jung](http://www.mndynamics.com/indexp.html#XR)
+
+
+
 ![whole set using palette colors](mturn.png)
 
 
