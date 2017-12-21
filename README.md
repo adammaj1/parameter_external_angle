@@ -244,6 +244,8 @@ double externalAngle(...) {
 >(perhaps using [the newton's method of mandel-exray.pdf](http://www.math.titech.ac.jp/~kawahira/programs/mandel-exray.pdf) in reverse), repeat until no more bits left.  you move C a fractional iteration count each time, and collect bits when crossing integer dwell boundaries
 
 
+>it is asymptotically too slow to be practical: [$`O(n^2)`$](https://en.wikipedia.org/wiki/Big_O_notation) where n is the sum of the preperiod and period of the external angle.
+
 Claude Heiland-Allen
 * [blog](http://mathr.co.uk/blog/)
 * [FF: smooth-external-angle-of-mandelbrot-set](http://www.fractalforums.com/programming/smooth-external-angle-of-mandelbrot-set/15/)  
