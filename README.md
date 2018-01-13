@@ -52,6 +52,9 @@ $`arg_M(c) = arg(c) + \sum_{n=1}^\infty \left( \frac{1}{2^n}*arg \left( \frac{f_
 > but the principal value goes from π/2 to π, jumps to -π, and goes to -π/2. 
 
   [Wolf Jung](http://www.mndynamics.com/indexp.html#XR)
+  
+  
+Note that result ot the arg function can have positive or negative sign so sum can be greater or lower then arg(c) !
 
 
 
