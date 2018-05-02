@@ -98,7 +98,9 @@ Here one can see errors in computing : compare with [Stripe Average Coloring ](R
 
 ![zoom of wake 1/3 with binary decomposition](mturn3bd.png)
 
-One can see on the binary decomposition image that errors are in the chaotic region, where "our images look noisy and grainy near the boundary of the Mandelbrot set" 
+One can see on the binary decomposition image that errors are in the chaotic region, where "our image looks noisy and grainy near the boundary of the Mandelbrot set" (Claude Heiland-Allen )
+
+
 
 Code:
 
