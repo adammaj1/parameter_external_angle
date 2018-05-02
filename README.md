@@ -35,10 +35,38 @@ Methods for the boundary points:
 
 Methods for the exterior points:
 * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
-* [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
+* trace external ray outwards on the parameter plane
+  * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
+  * trace external ray outwards on the parameter plane and compute argument of last point 
 * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
 * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
 * [argument of the Boettcher function](README.md#argument-of-the-boettcher-function)
+
+
+## trace external ray outwards on the parameter plane and compute argument of last point 
+
+> The lines of constant phase are exactly what is referred to as the Douady-Hubbard 'external rays'. With a tiny bit of math, its easy to see that these lines of constant phase are exactly perpendicular to the equipotential lines. 
+
+[Linas Vepstas](https://linas.org/art-gallery/escape/ray.html)
+
+> draw ... the external rays in such a way that they are perpendicular to the escape lines
+
+[M. Romera et all  in A Method to Solve the Limitations in Drawing External Rays of the Mandelbrot Set](https://www.researchgate.net/publication/258389622_A_Method_to_Solve_the_Limitations_in_Drawing_External_Rays_of_the_Mandelbrot_Set)
+
+
+
+
+[Two methods:](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/the-gradient)
+* "Choose a fixed step size, and find the direction such that a step of that size increases/decreases f the most."
+* "Choose a fixed increase in f, and find the direction such that it takes the shortest step to increase f by that amount."
+
+
+Links: 
+* https://commons.wikimedia.org/wiki/File:Coordinate_descent.svg
+* http://paulbourke.net/papers/conrec/
+* http://www.mndynamics.com/indexp.html#XR
+* https://stackoverflow.com/questions/27258941/equal-density-points-in-a-high-dimensional-space/27550398#27550398
+* http://www.isep.pw.edu.pl/~ambor/Pomoce/gradientowe.htm
 
 ## series expansion formula for computing external angle
 
@@ -68,6 +96,9 @@ Here one can see errors in computing : compare with [Stripe Average Coloring ](R
 
 ![zoom of wake 1/3](mturn3.png)
 
+![zoom of wake 1/3 with binary decomposition](mturn3bd.png)
+
+One can see on the binary decomposition image that errors are in the chaotic region, where "our images look noisy and grainy near the boundary of the Mandelbrot set" 
 
 Code:
 
