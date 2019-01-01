@@ -1,6 +1,7 @@
 
 
 TOC
+* [Which points of parameter have external angle ?](README.md#which-points-of-parameter-have-external-angle-)
 * [What is the external angle ?](angle.md#what-is-the-external-angle-)
 * [How to compute the external angle?](README.md#how-to-compute-the-external-angle)
   * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
@@ -24,9 +25,12 @@ Points which have the external angle:
 Points of the interior of Mandelbrot set ( interior of Mandelbrot set hyperbolic components) do not have external angle, but have internal angle.
 
 
+# How to describe external angle ( proper fraction)?
+* units ( [turns](https://en.wikipedia.org/wiki/Turn_(geometry)), radians, degrees)
+* [number, it's base,type and expansion](https://en.wikibooks.org/wiki/Fractals/Mathematics/Numbers#base_and_expansion_of_the_number)
+* dynamics of the fraction under angle doubling map: (pre)periodic/non-periodic 
+
 # How to compute the external angle?
-
-
 
 
 Methods for the boundary points:
@@ -38,13 +42,17 @@ Methods for the boundary points:
 
 
 Methods for the exterior points:
-* [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
-* trace external ray outwards on the parameter plane
-  * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
-  * trace external ray outwards on the parameter plane and compute argument of last point 
-* [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
-* [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
-* [argument of the Boettcher function](README.md#argument-of-the-boettcher-function)
+* by direction
+  * inwards ( from infinity towards point on the boundary of the Mandelbrot set)
+  * outwards ( from the point c towards infinity)
+* by algorithm
+  * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
+  * trace external ray outwards on the parameter plane
+    * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
+    * trace external ray outwards on the parameter plane and compute argument of last point 
+  * [Douady and Hubbard method](README.md#douady-and-hubbard-method-for-c-near-the-real-axis)
+  * [Stripe Average Coloring (or Method) = SAM or SAC](README.md#stripe-average-coloring-or-method-sam-or-sac) - good graphical result
+  * [argument of the Boettcher function](README.md#argument-of-the-boettcher-function)
 
 
 ## trace external ray outwards on the parameter plane and compute argument of last point 
