@@ -14,21 +14,25 @@ TOC
 
 
 
+# Which points of parameter have external angle ?
 
+
+Points which have the external angle:
+* point of the boundary of the Mandelbrot set ( landing point of the external ray ). It can have one or more external angles : biaccesible, triaccesible , ...
+* point of the exterior of the Mandelbrot set ( only ona external angle) 
+
+Points of the interior of Mandelbrot set ( interior of Mandelbrot set hyperbolic components) do not have external angle, but have internal angle.
 
 
 # How to compute the external angle?
 
-Points which have the external angle:
-* point of the boundary of the Mandelbrot set ( landing point of the external ray ). It can have more then one external angle : biaccesible, triaccesible , ...
-* point of the exterior of the Mandelbrot set ( only ona external angle) 
 
 
 
 Methods for the boundary points:
 * Schleicher algorithm 
 * Combinatorial algorithm = Devaney's method for [the angles of the wake](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/wake) 
-* tuning algorithm by Douady
+* [tuning algorithm by Douady](http://www-personal.umich.edu/~kochsc/douady.pdf)
   * [subwake](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/subwake)
 * [outer algorithm by Pastor](http://www.tic.itefi.csic.es/gerardo/publica/Pastor07a.pdf)
 
