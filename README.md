@@ -17,7 +17,6 @@ TOC
 
 # Which points of parameter have external angle ?
 
-
 Points which have the external angle:
 * point of the boundary of the Mandelbrot set ( landing point of the external ray ). It can have one or more external angles : biaccesible, triaccesible , ...
 * point of the exterior of the Mandelbrot set ( only ona external angle) 
@@ -25,13 +24,24 @@ Points which have the external angle:
 Points of the interior of Mandelbrot set ( interior of Mandelbrot set hyperbolic components) do not have external angle, but have internal angle.
 
 
+
+
 # How to describe external angle ( proper fraction)?
 * units ( [turns](https://en.wikipedia.org/wiki/Turn_(geometry)), radians, degrees)
 * [number, it's base,type and expansion](https://en.wikibooks.org/wiki/Fractals/Mathematics/Numbers#base_and_expansion_of_the_number)
 * dynamics of the fraction under angle doubling map: (pre)periodic/non-periodic 
 
-# How to compute the external angle?
 
+# Tasks related with external angle
+* compute external angle of the point c
+* draw external angle thru the point c from the exterior
+* find which external rays land on the point c from the boundary
+* draw external angle from the infinity toward boundary 
+
+
+
+
+# How to compute the external angle?
 
 Methods for the boundary points:
 * Schleicher algorithm 
