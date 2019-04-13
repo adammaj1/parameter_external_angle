@@ -1,5 +1,5 @@
 /*
-original algorithm by billtavis posted on fractalforums.com
+original algorithm by Bill Tavis posted on fractalforums.com
 Re: smooth external angle of Mandelbrot set?
 February 20, 2015, 05:12:34 PM
 http://www.fractalforums.com/index.php?topic=19060.msg80726#msg80726
@@ -14,6 +14,8 @@ testing shows the original atan2() is only accurate to around 16 bits
 bit collection when passing dwell bands is much more accurate
 
 g++ -std=c++11 -Wall -Wextra -pedantic -O3 -o tavis tavis.cpp
+
+
 #        cre   cim   iter  # pre(periodic) angle of nearby landing point
 ./tavis  0.251 0     1000  # .(0)
 ./tavis -2.001 0     1000  # .1(0)
@@ -26,6 +28,18 @@ g++ -std=c++11 -Wall -Wextra -pedantic -O3 -o tavis tavis.cpp
 fails to terminate if command line arguments are invalid, for example:
   cre + cim i  not exterior to Mandelbrot set
   iter  too low for  cre + cim i  to escape
+  
+  
+  
+"  
+... from every pixel, I drop a ball and let it roll downhill away from the set. 
+Once it reaches a very large distance from the set, I use it's angle on that large circle. 
+Every step of the ball rolling requires computing the gradient at its current location, 
+which requires a full set of iterations. This is why it's so slow. 
+However the advantage is that by decreasing the step size 
+and using 4th order Runge-Kutta integration I was able to get it quite accurate:"
+
+"  
   
   
   
@@ -235,7 +249,11 @@ BITS externalAngle(long double cx, long double cy, size_t maxIter, long double &
         ckx += dist * gzx/gzlength; // normalize gradient and scale by dist
         cky += dist * gzy/gzlength;
     }
+    // external angle
     e = (std::atan2(cky,ckx));
+    e /= 2.0*M_PI; // now in turns
+    if (e<0.0) e += 1.0; // map from (-1/2,1/2] to [0, 1) 
+    //
     reverse(bs.begin(), bs.end());
     return bs;
 }
@@ -259,6 +277,36 @@ which was way too slow.
 
 
 
+/*
+Yes I am willing to but I don't have anything ready and it will take a little bit of work to extract something shareable... in the mean time I can share some pseudocode. The important function is one called gradientRay which is what calculates the point walking inward. This would be called from another function that is choosing angles to sample, and then plotting the orbits of the resulting c values. With simple Euler integration it looks like below. Larger values for the radius are more accurate in terms of walking down specific angles, but it takes longer. A similar thing can be said about reducing the step size, in terms of a trade off in accuracy vs time.
+
+The equation to calculate the gradient can be found here  http://linas.org/art-gallery/escape/ray.html
+
+Also more code can be found in this thread about external angles, which is doing the exact same thing but in reverse http://www.fractalforums.com/programming/smooth-external-angle-of-mandelbrot-set/
+
+*/
+
+
+
+
+// https://fractalforums.org/fractal-mathematics-and-new-theories/28/the-buddhas-jewel-revisited-finding-mandelbrot-orbits-shaped-like-julia-sets/2738/;topicseen
+// Bill Tavis
+function gradientRay(angle) (
+     radius = 256;
+     complex c; // declare a complex point
+     c.real = radius * cos(angle);
+     c.imag = radius * sin(angle);
+     dist = radius; // declare distance variable
+     stepsize = 0.5; // decrease the distance walked
+     while (dist > 1.0e-19l) ( // walk in
+          complex cG; // declare complex point for holding gradient
+          getGradient(c,&cG,&dist) // function computes gradient and distance for the point c
+          c -= stepsize * dist * (cG / cG.abs()); // take a step in the direction of the set
+     )
+     return c;
+)
+
+
 
 
 int main(int argc, char **argv) {
@@ -267,12 +315,19 @@ int main(int argc, char **argv) {
   if (argc > 3) {
     long double e = 0;
     auto bs2 = externalAngle(strtold(argv[1], 0), strtold(argv[2], 0), atoi(argv[3]), e);
+    // test
     auto bs1 = toBits(e);
     auto n = bitsAgree(bs1, bs2);
-    printBits(bs1, n);
+    //printBits(bs1, n);
+    
+    printf("\ne = %.18Lf = ", e);
+   // printBits(bs1, n);
     printBits(bs2, n);
+    printf("\n");
     return 0;
   }
+  
+  printf(" not enough aruments : argc = %d and it should be argc > 3 \n", argc);
   
   return 1;
 }
