@@ -416,9 +416,32 @@ Files:
 * [parameter ray_in using Newton method and mpfr library in c ](https://gitlab.com/c_files/parameter_ray_in_newton_mpfr)
 * [NonInteractive Parameter Ray_In MPFR](https://gitlab.com/adammajewski/NonInteractiveParameterRayInMPFR)
 * [External angles in the Mandelbrot set: the work of Douady and Hubbard. by Professor Douglas C. Ravenel](https://web.math.rochester.edu/people/faculty/doug/oldcourses/215s98/lecture10.html)
-* [Plotting field lines during iteration by Chris Thomasson](http://www.fractalforums.com/new-theories-and-research/plotting-field-lines-during-iteration)
+* Chris Thomasson : 
+  * [Plotting field lines during iteration  ](http://www.fractalforums.com/new-theories-and-research/plotting-field-lines-during-iteration)
+  * [escape time field line algorithm in Ultra Fractal]( https://www.facebook.com/groups/772574203128420/?ref=nf_target&fref=nf)
+* [Fractalzoomer - Java progam by Chris Kalonakis ( with src code)](https://en.wikibooks.org/wiki/Fractals/fractalzoomer#Escape_Time_+_Field_Lines)
+
+  
+  
+```c  
+# escape time field line algorithm in Ultra Fractal by  Chris Thomasson
+ct_test_mandelbrot_escape_field {
+init:
+z = #pixel
+zp = z
+g = 200.0
+
+loop:
+zp = z
+z = z^2 + #pixel
+bailout:
+! (((real(z) / real(zp)) > g) && ((imag(z) / imag(zp)) > g))
+default:
+title = "CT Test Mandelbrot Escape Field"
+}
 
 
+```
 # Key words
 * discrete local complex dynamics
 * complex quadratic polynomial
