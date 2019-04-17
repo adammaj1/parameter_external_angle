@@ -143,9 +143,8 @@ Links
 * Böttcher function by Souichiro-Ikebe
   * [description](http://math-functions-1.watson.jp/sub1_spec_390.html#section060)
   * [How to process branch cut lines of Böttcher function](http://math-functions-1.watson.jp/sub4_math_020.html#section030)
-  * [FractalRelated.m ](the Mathematica-Package file " FractalRelated.m " in "Code of special function graph" of "File created in Version 8 ") - package of the Mathematica code
-
-
+  * [FractalRelated.m ](http://math-functions-1.watson.jp/sub4_math_010.html) the Mathematica-Package file 
+  * [Wolfram : Iterated Maps & Fractals](https://reference.wolfram.com/language/guide/IteratedMapsAndFractals.html)
 ### n
 
 (?????)
