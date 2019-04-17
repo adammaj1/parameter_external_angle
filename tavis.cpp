@@ -42,6 +42,12 @@ and using 4th order Runge-Kutta integration I was able to get it quite accurate:
 "  
   
   
+ http://www.fractalforums.com/animations-showcase-(rate-my-short-animation)/mandelbrot-phase-angle-gif-loop/ 
+ To make this gif, I just plotted the values of
+
+std::atan2(gzx,gzy);
+which gave a grayscale picture of the phase angle of the gradient:
+  
   
 */
 
