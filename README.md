@@ -37,7 +37,7 @@ Points of the interior of Mandelbrot set ( interior of Mandelbrot set hyperbolic
 * draw external angle thru the point c from the exterior
 * find which external rays land on the point c from the boundary
 * draw external angle from the infinity toward boundary 
-* draw/colour the parameter plane using external angle for 
+* draw/colour the parameter plane using external angle for the gradient
 
 
 
@@ -466,4 +466,6 @@ git add .
 git commit -m "Initial commit"
 git push -u origin master
 ```
+
+~/c/mandel/p_e_angle
 
