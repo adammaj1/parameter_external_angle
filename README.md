@@ -2,7 +2,7 @@
 
 TOC
 * [Which points of parameter have external angle ?](README.md#which-points-of-parameter-have-external-angle-)
-* [What is the external angle ?](angle.md#what-is-the-external-angle-)
+* [What is the external angle ?](./src/angle.md#what-is-the-external-angle-)
 * [How to compute the external angle?](README.md#how-to-compute-the-external-angle)
   * [series expansion formula ](README.md#series-expansion-formula-for-computing-external-angle)
   * [trace external ray outwards on the parameter plane and collect bits ](README.md#trace-external-ray-outwards-on-the-parameter-plane) - the best method ?
@@ -278,7 +278,7 @@ Now one can skip:
 
 
 Files:
-* [mturn.c](mturn.c) - c file
+* [mturn.c](./src/mturn.c) - c file
 * [mturn.png](./images/mturn.png) - whole set using palette colors
 * [mturng.png](./images/mturng.png) - whole set using gray colors
 * [mturn3.png](./images/mturn3.png) - zoom of wake 1/3 using palette colors
@@ -324,12 +324,12 @@ See also:
 
 
 Code:
-* [tavis.cpp ](tavis.cpp) - compute external angle of point cx, cy
+* [tavis.cpp ](./src/tavis.cpp) - compute external angle of point cx, cy
 
 
 ## argument of the Boettcher coordinate
 
-One can use argument of [Boettcher coordinate](boettcher.md) for computing external argument (angle). 
+One can use argument of [Boettcher coordinate](./src/boettcher.md) for computing external argument (angle). 
 
 
 
@@ -380,8 +380,8 @@ The point c0 = -.75 is the root of the period 2 bud. There are two rays leading 
 
 
 Files:
-* [douady.c ](douady.c) - c file wich checks Douady-Hubbard method
-* [morse.mac ](morse.mac) - batch file for Maxima cas which computes upper angles of external rays which land on the roots of the period doubling cascade on the real axis
+* [douady.c ](./src/douady.c) - c file wich checks Douady-Hubbard method
+* [morse.mac ](./src/morse.mac) - batch file for Maxima cas which computes upper angles of external rays which land on the roots of the period doubling cascade on the real axis
 
 
 
@@ -405,7 +405,7 @@ Links:
 
 
 Files:
-* [samm.c](samm.c) - c file
+* [samm.c](./src/samm.c) - c file
 * [samm.png](./images/samm.png)
 * [samm3.png](./images/samm3.png)
 
@@ -466,6 +466,29 @@ git add .
 git commit -m "Initial commit"
 git push -u origin master
 ```
+local repo : ~/c/mandel/p_e_angle
 
-~/c/mandel/p_e_angle
+
+
+### Subdirectory
+
+```git
+mkdir images
+git add *.png
+git mv  *.png ./images
+git commit -m "move"
+git push -u origin master
+```
+then link the images:
+
+```txt
+![](./images/n.png "description") 
+
+```
+
+```git
+gitm mv -f 
+```
+
+
 
