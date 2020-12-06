@@ -108,17 +108,17 @@ Note that result ot the arg function can have positive or negative sign so sum c
 
 
 
-![whole set using palette colors](mturn.png)
+![whole set using palette colors](./images/mturn.png)
 
 
-![whole set using gray colors](mturng.png)
+![whole set using gray colors](./images/mturng.png)
 
 
 Here one can see errors in computing : compare with [Stripe Average Coloring ](README.md#stripe-average-coloring-or-method-sam-or-sac) 
 
-![zoom of wake 1/3](mturn3.png)
+![zoom of wake 1/3](./images/mturn3.png)
 
-![zoom of wake 1/3 with binary decomposition](mturn3bd.png)
+![zoom of wake 1/3 with binary decomposition](./images/mturn3bd.png)
 
 One can see on the binary decomposition image that errors are in the chaotic region, where "our image looks noisy and grainy near the boundary of the Mandelbrot set" (Claude Heiland-Allen )
 
@@ -279,9 +279,9 @@ Now one can skip:
 
 Files:
 * [mturn.c](mturn.c) - c file
-* [mturn.png](mturn.png) - whole set using palette colors
-* [mturng.png](mturng.png) - whole set using gray colors
-* [mturn3.png](mturn3.png) - zoom of wake 1/3 using palette colors
+* [mturn.png](./images/mturn.png) - whole set using palette colors
+* [mturng.png](./images/mturng.png) - whole set using gray colors
+* [mturn3.png](./images/mturn3.png) - zoom of wake 1/3 using palette colors
 
 Links:
 * [description and cpp code by Wolf Jung](http://www.mndynamics.com/indexp.html#XR)
@@ -342,7 +342,7 @@ ArrayPlot[Table[Sin[100 Arg@MandelbrotSetBoettcher[x + I*y]], {y, -1, 1, .01}, {
 the result:
 
  
-![](argb.png)
+![](./images/argb.png)
 
 
 
@@ -397,17 +397,17 @@ Links:
 
 
 
-![whole set ](samm.png)
+![whole set ](./images/samm.png)
 
 
 
-![zoom of wake 1/3](samm3.png)
+![zoom of wake 1/3](./images/samm3.png)
 
 
 Files:
 * [samm.c](samm.c) - c file
-* [samm.png](samm.png)
-* [samm3.png](samm3.png)
+* [samm.png](./images/samm.png)
+* [samm3.png](./images/samm3.png)
 
 
 
